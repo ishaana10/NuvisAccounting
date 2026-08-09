@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature request
+    url: https://nuvisaccounting.com/forum
+    about: 'For ideas or feature requests, start a new discussion'
+  - name: Support, help, and other
+    url: https://nuvisaccounting.com/support
+    about: 'This repository is only for reporting bugs'
+  - name: Documentation
+    url: https://github.com/nuvisaccounting/docs
+    about: For documentation improvements, open a pull request at the nuvisaccounting/docs repository
