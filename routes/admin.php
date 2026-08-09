@@ -253,6 +253,11 @@ Route::group(['prefix' => 'install'], function () {
     Route::post('updates/migrate', 'Install\Updates@migrate')->name('updates.migrate');
     Route::post('updates/finish', 'Install\Updates@finish')->name('updates.finish');
     Route::post('updates/redirect', 'Install\Updates@redirect')->name('updates.redirect');
+
+    // Repo Updates (direct Git Pull updates module)
+    Route::post('updates/repo-pull', 'Install\RepoUpdates@pull')->name('updates.repo-pull');
+    Route::get('updates/repo-logs', 'Install\RepoUpdates@logs')->name('updates.repo-logs');
+    Route::post('updates/repo-clear-logs', 'Install\RepoUpdates@clearLogs')->name('updates.repo-clear-logs');
 });
 
 Route::group(['as' => 'modals.', 'prefix' => 'modals'], function () {
