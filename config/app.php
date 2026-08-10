@@ -186,6 +186,7 @@ return [
          */
         Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
+        NuvisAccounting\Apexcharts\Provider::class,
 
         /*
          * Application Service Providers...
@@ -218,6 +219,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         'Date' => App\Utilities\Date::class,
+        'Apexcharts' => NuvisAccounting\Apexcharts\Facade::class,
     ])->toArray(),
 
 ];

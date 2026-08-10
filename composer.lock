@@ -9,14 +9,9 @@
         {
             "name": "nuvisaccounting/laravel-apexcharts",
             "version": "3.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-apexcharts.git",
-                "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-apexcharts/zipball/e44fb0b858ad3e87557d2aea822dac8a86d048f3",
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-apexcharts",
                 "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3",
                 "shasum": ""
             },
