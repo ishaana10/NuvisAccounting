@@ -99,6 +99,7 @@
     "autoload": {
         "psr-4": {
             "App\\": ["app/"],
+            "NuvisAccounting\\Apexcharts\\": "overrides/nuvisaccounting/laravel-apexcharts/src/",
             "NuvisAccounting\\Module\\Commands\\": "overrides/nuvisaccounting/laravel-module/Commands/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeds\\": "database/seeds/",
@@ -160,6 +161,13 @@
         ]
     },
     "repositories": [
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-apexcharts",
+            "options": {
+                "symlink": false
+            }
+        },
         {
             "type": "package",
             "package": {
