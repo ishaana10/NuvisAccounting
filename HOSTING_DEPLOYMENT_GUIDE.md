@@ -20,6 +20,22 @@ To make this repository a fully working copy ready for testing and easy deployme
 
 ---
 
+## 🛡️ Resolving GitHub Actions / CI Failures
+
+Because several composer dependencies are private GitHub repositories under the `nuvisaccounting/` namespace, standard GitHub Actions CI/CD runs will fail with **404 Not Found** errors when attempting to download those archives.
+
+We have updated the CI workflow (`.github/workflows/tests.yml`) to support custom authentication via repository secrets. To make your CI pass on GitHub:
+
+1. Create a **GitHub Personal Access Token (PAT)** from your GitHub settings with `repo` read permissions.
+2. Go to your repository on GitHub.
+3. Click on **Settings** -> **Secrets and variables** -> **Actions**.
+4. Click on **New repository secret**.
+5. Set Name to `COMPOSER_TOKEN`.
+6. Set Secret to your generated GitHub PAT.
+7. Re-run your workflow. The setup script will automatically inject this token so `composer install` can successfully authenticate and pull the private packages!
+
+---
+
 ## 📋 System Requirements
 
 Ensure your hosting environment meets the following baseline requirements:

@@ -35,6 +35,12 @@ jobs:
           extensions: bcmath, ctype, dom, fileinfo, intl, gd, json, mbstring, pdo, pdo_sqlite, openssl, sqlite, xml, zip
           coverage: none
 
+      - name: Configure GitHub Token for Composer
+        run: |
+          if [ ! -z "${{ secrets.COMPOSER_TOKEN }}" ]; then
+            composer config -g github-oauth.github.com "${{ secrets.COMPOSER_TOKEN }}"
+          fi
+
       - name: Copy .env
         run: cp .env.testing .env
 
