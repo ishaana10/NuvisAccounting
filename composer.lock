@@ -4,8 +4,798 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f5635da6087ff129a37fce190868547",
+    "content-hash": "6b0ce2b192df881be607cae850b9a89e",
     "packages": [
+        {
+            "name": "nuvisaccounting/laravel-apexcharts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-apexcharts.git",
+                "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-apexcharts/zipball/e44fb0b858ad3e87557d2aea822dac8a86d048f3",
+                "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3",
+                "shasum": ""
+            },
+            "require": {
+                "balping/json-raw-encoder": "^1.0",
+                "ext-json": "*",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Apexcharts": "NuvisAccounting\\Apexcharts\\Facade"
+                    },
+                    "providers": [
+                        "NuvisAccounting\\Apexcharts\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Apexcharts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cüneyt Şentürk",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ApexCharts package for Laravel",
+            "keywords": [
+                "apexcharts",
+                "bar",
+                "charts",
+                "donut",
+                "laravel",
+                "line",
+                "pie"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-apexcharts/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-apexcharts/tree/3.2.0"
+            },
+            "time": "2025-04-04T21:02:33+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-debugbar-collector",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-debugbar-collector.git",
+                "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-debugbar-collector/zipball/dc6a879f8dbfe5562679baf505f92ed13ec19afe",
+                "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/laravel-debugbar": ">=3.6",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=7.0",
+                "phpunit/phpunit": ">=9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\DebugbarCollector\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\DebugbarCollector\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sevan Nerse",
+                    "email": "sevan@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Debugbar collector package for NuvisAccounting",
+            "keywords": [
+                "nuvisaccounting",
+                "debugbar",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-debugbar-collector/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-debugbar-collector/tree/2.1.1"
+            },
+            "time": "2023-06-02T07:22:01+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-firewall",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-firewall.git",
+                "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-firewall/zipball/98e19074c4d32e09d61c90057d5adc54d7f10ffa",
+                "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.8",
+                "jenssegers/agent": "2.6.*",
+                "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.5|^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Firewall\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Firewall\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Web Application Firewall (WAF) package for Laravel",
+            "keywords": [
+                "blacklist",
+                "firewall",
+                "laravel",
+                "lfi",
+                "rfi",
+                "security",
+                "sqli",
+                "waf",
+                "xss"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-firewall/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-firewall/tree/2.3.0"
+            },
+            "time": "2025-04-09T21:44:10+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-language",
+            "version": "1.0.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-language.git",
+                "reference": "83285fb4ad450b406f2df8570090828e4326ee1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-language/zipball/83285fb4ad450b406f2df8570090828e4326ee1a",
+                "reference": "83285fb4ad450b406f2df8570090828e4326ee1a",
+                "shasum": ""
+            },
+            "require": {
+                "jenssegers/agent": "2.6.*",
+                "laravel/framework": ">=5.4.0",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Language": "NuvisAccounting\\Language\\Facade"
+                    },
+                    "providers": [
+                        "NuvisAccounting\\Language\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "NuvisAccounting\\Language\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Language switcher package for Laravel",
+            "keywords": [
+                "language",
+                "laravel",
+                "switcher"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-language/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-language/tree/1.0.22"
+            },
+            "time": "2022-08-05T07:33:12+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-menu",
+            "version": "3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-menu.git",
+                "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-menu/zipball/b69bb5c9d308eabb777fbb59269f7c8102ecda55",
+                "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^9.0|^10.0",
+                "illuminate/support": "^9.0|^10.0",
+                "illuminate/view": "^9.0|^10.0",
+                "laravelcollective/html": "^6.3",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.12",
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Menu": "NuvisAccounting\\Menu\\Facade"
+                    },
+                    "providers": [
+                        "NuvisAccounting\\Menu\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "NuvisAccounting\\Menu\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Menu and sidebar management package for Laravel",
+            "keywords": [
+                "bootstrap",
+                "laravel",
+                "menu",
+                "navigation",
+                "sidebar"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-menu/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-menu/tree/3.1.2"
+            },
+            "time": "2023-10-25T12:43:24+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-module",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-module.git",
+                "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-module/zipball/d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
+                "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/framework": "^9.0|^10.0",
+                "orchestra/testbench": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Module": "NuvisAccounting\\Module\\Facade"
+                    },
+                    "providers": [
+                        "NuvisAccounting\\Module\\Providers\\Laravel"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "NuvisAccounting\\Module\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Module management package for Laravel",
+            "keywords": [
+                "nuvisaccounting",
+                "laravel",
+                "module",
+                "rad"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-module/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-module/tree/4.0.3"
+            },
+            "time": "2024-12-05T04:55:26+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-money",
+            "version": "5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-money.git",
+                "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-money/zipball/d99a9e8e576cac40668d0a5afaf7ea153590aff9",
+                "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0|^10.0|^11.0",
+                "illuminate/support": "^9.0|^10.0|^11.0",
+                "illuminate/validation": "^9.0|^10.0|^11.0",
+                "illuminate/view": "^9.0|^10.0|^11.0",
+                "php": "^8.0",
+                "vlucas/phpdotenv": "^5.4.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.4|^8.0|^9.0",
+                "phpunit/phpunit": "^9.5|^10.0|^11.0",
+                "vimeo/psalm": "^4.23|^5.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Money\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "NuvisAccounting\\Money\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Currency formatting and conversion package for Laravel",
+            "keywords": [
+                "convert",
+                "currency",
+                "format",
+                "laravel",
+                "money"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-money/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-money/tree/5.2.2"
+            },
+            "time": "2024-09-25T10:06:11+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-mutable-observer",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-mutable-observer.git",
+                "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-mutable-observer/zipball/f7367ae0fcf7e9ac640bee5ec016471564125b21",
+                "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.0|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\MutableObserver\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\MutableObserver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mutable observer package for Laravel",
+            "keywords": [
+                "laravel",
+                "mutable",
+                "mute",
+                "observer",
+                "unmute"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-mutable-observer/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-mutable-observer/tree/2.0.1"
+            },
+            "time": "2023-03-16T14:49:06+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-setting",
+            "version": "1.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-setting.git",
+                "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-setting/zipball/97e42cd18b6595169c3a5b8082d20f9585c9c512",
+                "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.3",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "laravel/framework": ">=5.3",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": ">=4.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Setting": "NuvisAccounting\\Setting\\Facade"
+                    },
+                    "providers": [
+                        "NuvisAccounting\\Setting\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "NuvisAccounting\\Setting\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Persistent settings package for Laravel",
+            "keywords": [
+                "Settings",
+                "config",
+                "laravel",
+                "persistent"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-setting/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-setting/tree/1.2.9"
+            },
+            "time": "2023-11-02T08:32:45+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-sortable",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-sortable.git",
+                "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-sortable/zipball/5d852b359ffd805e1e216c8989b95d526edfb8a2",
+                "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.0|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Sortable\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Sortable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sortable behavior package for Laravel",
+            "keywords": [
+                "blade",
+                "column",
+                "laravel",
+                "model",
+                "sort",
+                "sortable",
+                "sorting",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-sortable/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-sortable/tree/2.0.2"
+            },
+            "time": "2024-07-12T11:55:40+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-version",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/laravel-version.git",
+                "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-version/zipball/5d632c8ce54131bbe15f22ea135934efbf1fad85",
+                "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.2.0",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Version": "NuvisAccounting\\Version\\Facade"
+                    },
+                    "providers": [
+                        "NuvisAccounting\\Version\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "NuvisAccounting\\Version\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Version management package for Laravel",
+            "keywords": [
+                "laravel",
+                "version"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/laravel-version/issues",
+                "source": "https://github.com/nuvisaccounting/laravel-version/tree/1.0.4"
+            },
+            "time": "2021-03-05T11:00:11+00:00"
+        },
+        {
+            "name": "nuvisaccounting/module-offline-payments",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/module-offline-payments.git",
+                "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/module-offline-payments/zipball/9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
+                "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "Offline Payments app for NuvisAccounting",
+            "homepage": "https://nuvisaccounting.com",
+            "keywords": [
+                "Accounting",
+                "nuvisaccounting",
+                "invoice",
+                "laravel",
+                "offline-payments"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/module-offline-payments/issues",
+                "source": "https://github.com/nuvisaccounting/module-offline-payments/tree/3.0.4"
+            },
+            "time": "2024-04-30T13:19:29+00:00"
+        },
+        {
+            "name": "nuvisaccounting/module-paypal-standard",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nuvisaccounting/module-paypal-standard.git",
+                "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nuvisaccounting/module-paypal-standard/zipball/798bb068fcb6accd313d8aeb5562f2a801e77c92",
+                "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "PayPal Standard app for NuvisAccounting",
+            "homepage": "https://nuvisaccounting.com",
+            "keywords": [
+                "Accounting",
+                "nuvisaccounting",
+                "invoice",
+                "laravel",
+                "paypal"
+            ],
+            "support": {
+                "issues": "https://github.com/nuvisaccounting/module-paypal-standard/issues",
+                "source": "https://github.com/nuvisaccounting/module-paypal-standard/tree/3.0.3"
+            },
+            "time": "2026-07-12T13:07:26+00:00"
+        },
         {
             "name": "aws/aws-crt-php",
             "version": "v1.2.7",
@@ -6578,798 +7368,6 @@
                 }
             ],
             "time": "2024-11-21T10:36:35+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-apexcharts",
-            "version": "3.2.0",
-            "dist": {
-                "type": "path",
-                "url": "overrides/nuvisaccounting/laravel-apexcharts",
-                "reference": "f3569479e5b760267ea24316d3f0d64b2418d143"
-            },
-            "require": {
-                "balping/json-raw-encoder": "^1.0",
-                "ext-json": "*",
-                "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^8.0|^9.1.4|^10.0|^11.0",
-                "phpunit/phpunit": "^10.0|^11.0|^12.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Apexcharts\\Provider"
-                    ],
-                    "aliases": {
-                        "Apexcharts": "NuvisAccounting\\Apexcharts\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\Apexcharts\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "NuvisAccounting\\Apexcharts\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cüneyt Şentürk",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "ApexCharts package for Laravel",
-            "keywords": [
-                "apexcharts",
-                "bar",
-                "charts",
-                "donut",
-                "laravel",
-                "line",
-                "pie"
-            ],
-            "transport-options": {
-                "symlink": false,
-                "relative": true
-            }
-        },
-        {
-            "name": "nuvisaccounting/laravel-debugbar-collector",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-debugbar-collector.git",
-                "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-debugbar-collector/zipball/dc6a879f8dbfe5562679baf505f92ed13ec19afe",
-                "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/laravel-debugbar": ">=3.6",
-                "php": ">=8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": ">=7.0",
-                "phpunit/phpunit": ">=9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\DebugbarCollector\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\DebugbarCollector\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Sevan Nerse",
-                    "email": "sevan@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Laravel Debugbar collector package for NuvisAccounting",
-            "keywords": [
-                "debugbar",
-                "laravel",
-                "nuvisaccounting"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-debugbar-collector/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-debugbar-collector/tree/2.1.1"
-            },
-            "time": "2023-06-02T07:22:01+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-firewall",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-firewall.git",
-                "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-firewall/zipball/98e19074c4d32e09d61c90057d5adc54d7f10ffa",
-                "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^7.8",
-                "jenssegers/agent": "2.6.*",
-                "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
-                "phpunit/phpunit": "^9.5|^10.0|^11.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Firewall\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\Firewall\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Web Application Firewall (WAF) package for Laravel",
-            "keywords": [
-                "blacklist",
-                "firewall",
-                "laravel",
-                "lfi",
-                "rfi",
-                "security",
-                "sqli",
-                "waf",
-                "xss"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-firewall/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-firewall/tree/2.3.0"
-            },
-            "time": "2025-04-09T21:44:10+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-language",
-            "version": "1.0.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-language.git",
-                "reference": "83285fb4ad450b406f2df8570090828e4326ee1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-language/zipball/83285fb4ad450b406f2df8570090828e4326ee1a",
-                "reference": "83285fb4ad450b406f2df8570090828e4326ee1a",
-                "shasum": ""
-            },
-            "require": {
-                "jenssegers/agent": "2.6.*",
-                "laravel/framework": ">=5.4.0",
-                "php": ">=5.6.4"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Language": "NuvisAccounting\\Language\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Language\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Language\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Language switcher package for Laravel",
-            "keywords": [
-                "language",
-                "laravel",
-                "switcher"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-language/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-language/tree/1.0.22"
-            },
-            "time": "2022-08-05T07:33:12+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-menu",
-            "version": "3.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-menu.git",
-                "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-menu/zipball/b69bb5c9d308eabb777fbb59269f7c8102ecda55",
-                "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "^9.0|^10.0",
-                "illuminate/support": "^9.0|^10.0",
-                "illuminate/view": "^9.0|^10.0",
-                "laravelcollective/html": "^6.3",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.12",
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Menu": "NuvisAccounting\\Menu\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Menu\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Menu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Menu and sidebar management package for Laravel",
-            "keywords": [
-                "bootstrap",
-                "laravel",
-                "menu",
-                "navigation",
-                "sidebar"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-menu/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-menu/tree/3.1.2"
-            },
-            "time": "2023-10-25T12:43:24+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-module",
-            "version": "4.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-module.git",
-                "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-module/zipball/d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
-                "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "laravel/framework": "^9.0|^10.0",
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Module": "NuvisAccounting\\Module\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Module\\Providers\\Laravel"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Module\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Module management package for Laravel",
-            "keywords": [
-                "laravel",
-                "module",
-                "nuvisaccounting",
-                "rad"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-module/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-module/tree/4.0.3"
-            },
-            "time": "2024-12-05T04:55:26+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-money",
-            "version": "5.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-money.git",
-                "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-money/zipball/d99a9e8e576cac40668d0a5afaf7ea153590aff9",
-                "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^9.0|^10.0|^11.0",
-                "illuminate/support": "^9.0|^10.0|^11.0",
-                "illuminate/validation": "^9.0|^10.0|^11.0",
-                "illuminate/view": "^9.0|^10.0|^11.0",
-                "php": "^8.0",
-                "vlucas/phpdotenv": "^5.4.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0|^9.0",
-                "phpunit/phpunit": "^9.5|^10.0|^11.0",
-                "vimeo/psalm": "^4.23|^5.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Money\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Money\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Currency formatting and conversion package for Laravel",
-            "keywords": [
-                "convert",
-                "currency",
-                "format",
-                "laravel",
-                "money"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-money/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-money/tree/5.2.2"
-            },
-            "time": "2024-09-25T10:06:11+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-mutable-observer",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-mutable-observer.git",
-                "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-mutable-observer/zipball/f7367ae0fcf7e9ac640bee5ec016471564125b21",
-                "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.0|^10.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\MutableObserver\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\MutableObserver\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Mutable observer package for Laravel",
-            "keywords": [
-                "laravel",
-                "mutable",
-                "mute",
-                "observer",
-                "unmute"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-mutable-observer/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-mutable-observer/tree/2.0.1"
-            },
-            "time": "2023-03-16T14:49:06+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-setting",
-            "version": "1.2.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-setting.git",
-                "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-setting/zipball/97e42cd18b6595169c3a5b8082d20f9585c9c512",
-                "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": ">=5.3",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "laravel/framework": ">=5.3",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": ">=4.8"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Setting": "NuvisAccounting\\Setting\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Setting\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Setting\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Persistent settings package for Laravel",
-            "keywords": [
-                "Settings",
-                "config",
-                "laravel",
-                "persistent"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-setting/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-setting/tree/1.2.9"
-            },
-            "time": "2023-11-02T08:32:45+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-sortable",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-sortable.git",
-                "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-sortable/zipball/5d852b359ffd805e1e216c8989b95d526edfb8a2",
-                "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.0|^10.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Sortable\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\Sortable\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Sortable behavior package for Laravel",
-            "keywords": [
-                "blade",
-                "column",
-                "laravel",
-                "model",
-                "sort",
-                "sortable",
-                "sorting",
-                "view"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-sortable/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-sortable/tree/2.0.2"
-            },
-            "time": "2024-07-12T11:55:40+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-version",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-version.git",
-                "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-version/zipball/5d632c8ce54131bbe15f22ea135934efbf1fad85",
-                "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": ">=5.2.0",
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Version": "NuvisAccounting\\Version\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Version\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Version\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Version management package for Laravel",
-            "keywords": [
-                "laravel",
-                "version"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-version/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-version/tree/1.0.4"
-            },
-            "time": "2021-03-05T11:00:11+00:00"
-        },
-        {
-            "name": "nuvisaccounting/module-offline-payments",
-            "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/module-offline-payments.git",
-                "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/module-offline-payments/zipball/9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
-                "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "description": "Offline Payments app for NuvisAccounting",
-            "homepage": "https://nuvisaccounting.com",
-            "keywords": [
-                "Accounting",
-                "invoice",
-                "laravel",
-                "nuvisaccounting",
-                "offline-payments"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/module-offline-payments/issues",
-                "source": "https://github.com/nuvisaccounting/module-offline-payments/tree/3.0.4"
-            },
-            "time": "2024-04-30T13:19:29+00:00"
-        },
-        {
-            "name": "nuvisaccounting/module-paypal-standard",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/module-paypal-standard.git",
-                "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/module-paypal-standard/zipball/798bb068fcb6accd313d8aeb5562f2a801e77c92",
-                "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "description": "PayPal Standard app for NuvisAccounting",
-            "homepage": "https://nuvisaccounting.com",
-            "keywords": [
-                "Accounting",
-                "invoice",
-                "laravel",
-                "nuvisaccounting",
-                "paypal"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/module-paypal-standard/issues",
-                "source": "https://github.com/nuvisaccounting/module-paypal-standard/tree/3.0.3"
-            },
-            "time": "2026-07-12T13:07:26+00:00"
         },
         {
             "name": "nyholm/psr7",
