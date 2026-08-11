@@ -1,0 +1,65 @@
+{
+    "name": "nuvisaccounting/laravel-money",
+    "description": "Currency formatting and conversion package for Laravel",
+    "keywords": [
+        "laravel",
+        "money",
+        "currency",
+        "format",
+        "convert"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Duli\u00e7i",
+            "email": "info@akaunting.com",
+            "homepage": "https://akaunting.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^10.0|^11.0|^12|^13",
+        "illuminate/support": "^10.0|^11.0|^12|^13",
+        "illuminate/validation": "^10.0|^11.0|^12|^13",
+        "illuminate/view": "^10.0|^11.0|^12|^13",
+        "vlucas/phpdotenv": "^5.4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5|^11.5.50|^12.5.8",
+        "orchestra/testbench": "^8.0|^9.1.4|^10|^11",
+        "vimeo/psalm": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NuvisAccounting\\Money\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NuvisAccounting\\Money\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NuvisAccounting\\Money\\Provider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "psalm": "vendor/bin/psalm"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "5.2.2"
+}

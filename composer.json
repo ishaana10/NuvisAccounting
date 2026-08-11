@@ -92,13 +92,19 @@
             "dont-discover": []
         },
         "installer-paths": {
-            "modules/OfflinePayments": ["nuvisaccounting/module-offline-payments"],
-            "modules/PaypalStandard": ["nuvisaccounting/module-paypal-standard"]
+            "modules/OfflinePayments": [
+                "nuvisaccounting/module-offline-payments"
+            ],
+            "modules/PaypalStandard": [
+                "nuvisaccounting/module-paypal-standard"
+            ]
         }
     },
     "autoload": {
         "psr-4": {
-            "App\\": ["app/"],
+            "App\\": [
+                "app/"
+            ],
             "NuvisAccounting\\Apexcharts\\": "overrides/nuvisaccounting/laravel-apexcharts/src/",
             "NuvisAccounting\\Module\\Commands\\": "overrides/nuvisaccounting/laravel-module/Commands/",
             "Database\\Factories\\": "database/factories/",
@@ -161,6 +167,90 @@
         ]
     },
     "repositories": [
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-debugbar-collector",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-firewall",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-language",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-menu",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-module",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-money",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-mutable-observer",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-setting",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-sortable",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/laravel-version",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/module-offline-payments",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "overrides/nuvisaccounting/module-paypal-standard",
+            "options": {
+                "symlink": false
+            }
+        },
         {
             "type": "path",
             "url": "overrides/nuvisaccounting/laravel-apexcharts",

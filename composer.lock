@@ -4,793 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b0ce2b192df881be607cae850b9a89e",
+    "content-hash": "cbaa32fe033ee5408f1e31e2e1fe6f23",
     "packages": [
-        {
-            "name": "nuvisaccounting/laravel-apexcharts",
-            "version": "3.2.0",
-            "dist": {
-                "type": "path",
-                "url": "overrides/nuvisaccounting/laravel-apexcharts",
-                "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3",
-                "shasum": ""
-            },
-            "require": {
-                "balping/json-raw-encoder": "^1.0",
-                "ext-json": "*",
-                "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
-                "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Apexcharts": "NuvisAccounting\\Apexcharts\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Apexcharts\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\Apexcharts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cüneyt Şentürk",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "ApexCharts package for Laravel",
-            "keywords": [
-                "apexcharts",
-                "bar",
-                "charts",
-                "donut",
-                "laravel",
-                "line",
-                "pie"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-apexcharts/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-apexcharts/tree/3.2.0"
-            },
-            "time": "2025-04-04T21:02:33+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-debugbar-collector",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-debugbar-collector.git",
-                "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-debugbar-collector/zipball/dc6a879f8dbfe5562679baf505f92ed13ec19afe",
-                "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/laravel-debugbar": ">=3.6",
-                "php": ">=8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": ">=7.0",
-                "phpunit/phpunit": ">=9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\DebugbarCollector\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\DebugbarCollector\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Sevan Nerse",
-                    "email": "sevan@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Laravel Debugbar collector package for NuvisAccounting",
-            "keywords": [
-                "nuvisaccounting",
-                "debugbar",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-debugbar-collector/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-debugbar-collector/tree/2.1.1"
-            },
-            "time": "2023-06-02T07:22:01+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-firewall",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-firewall.git",
-                "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-firewall/zipball/98e19074c4d32e09d61c90057d5adc54d7f10ffa",
-                "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^7.8",
-                "jenssegers/agent": "2.6.*",
-                "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
-                "phpunit/phpunit": "^9.5|^10.0|^11.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Firewall\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\Firewall\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Web Application Firewall (WAF) package for Laravel",
-            "keywords": [
-                "blacklist",
-                "firewall",
-                "laravel",
-                "lfi",
-                "rfi",
-                "security",
-                "sqli",
-                "waf",
-                "xss"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-firewall/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-firewall/tree/2.3.0"
-            },
-            "time": "2025-04-09T21:44:10+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-language",
-            "version": "1.0.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-language.git",
-                "reference": "83285fb4ad450b406f2df8570090828e4326ee1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-language/zipball/83285fb4ad450b406f2df8570090828e4326ee1a",
-                "reference": "83285fb4ad450b406f2df8570090828e4326ee1a",
-                "shasum": ""
-            },
-            "require": {
-                "jenssegers/agent": "2.6.*",
-                "laravel/framework": ">=5.4.0",
-                "php": ">=5.6.4"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Language": "NuvisAccounting\\Language\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Language\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Language\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Language switcher package for Laravel",
-            "keywords": [
-                "language",
-                "laravel",
-                "switcher"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-language/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-language/tree/1.0.22"
-            },
-            "time": "2022-08-05T07:33:12+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-menu",
-            "version": "3.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-menu.git",
-                "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-menu/zipball/b69bb5c9d308eabb777fbb59269f7c8102ecda55",
-                "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/config": "^9.0|^10.0",
-                "illuminate/support": "^9.0|^10.0",
-                "illuminate/view": "^9.0|^10.0",
-                "laravelcollective/html": "^6.3",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.12",
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Menu": "NuvisAccounting\\Menu\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Menu\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Menu\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Menu and sidebar management package for Laravel",
-            "keywords": [
-                "bootstrap",
-                "laravel",
-                "menu",
-                "navigation",
-                "sidebar"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-menu/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-menu/tree/3.1.2"
-            },
-            "time": "2023-10-25T12:43:24+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-module",
-            "version": "4.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-module.git",
-                "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-module/zipball/d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
-                "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "laravel/framework": "^9.0|^10.0",
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Module": "NuvisAccounting\\Module\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Module\\Providers\\Laravel"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Module\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Module management package for Laravel",
-            "keywords": [
-                "nuvisaccounting",
-                "laravel",
-                "module",
-                "rad"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-module/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-module/tree/4.0.3"
-            },
-            "time": "2024-12-05T04:55:26+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-money",
-            "version": "5.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-money.git",
-                "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-money/zipball/d99a9e8e576cac40668d0a5afaf7ea153590aff9",
-                "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^9.0|^10.0|^11.0",
-                "illuminate/support": "^9.0|^10.0|^11.0",
-                "illuminate/validation": "^9.0|^10.0|^11.0",
-                "illuminate/view": "^9.0|^10.0|^11.0",
-                "php": "^8.0",
-                "vlucas/phpdotenv": "^5.4.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0|^9.0",
-                "phpunit/phpunit": "^9.5|^10.0|^11.0",
-                "vimeo/psalm": "^4.23|^5.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Money\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Money\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Currency formatting and conversion package for Laravel",
-            "keywords": [
-                "convert",
-                "currency",
-                "format",
-                "laravel",
-                "money"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-money/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-money/tree/5.2.2"
-            },
-            "time": "2024-09-25T10:06:11+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-mutable-observer",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-mutable-observer.git",
-                "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-mutable-observer/zipball/f7367ae0fcf7e9ac640bee5ec016471564125b21",
-                "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.0|^10.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\MutableObserver\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\MutableObserver\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Mutable observer package for Laravel",
-            "keywords": [
-                "laravel",
-                "mutable",
-                "mute",
-                "observer",
-                "unmute"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-mutable-observer/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-mutable-observer/tree/2.0.1"
-            },
-            "time": "2023-03-16T14:49:06+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-setting",
-            "version": "1.2.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-setting.git",
-                "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-setting/zipball/97e42cd18b6595169c3a5b8082d20f9585c9c512",
-                "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": ">=5.3",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "laravel/framework": ">=5.3",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": ">=4.8"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Setting": "NuvisAccounting\\Setting\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Setting\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Setting\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Persistent settings package for Laravel",
-            "keywords": [
-                "Settings",
-                "config",
-                "laravel",
-                "persistent"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-setting/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-setting/tree/1.2.9"
-            },
-            "time": "2023-11-02T08:32:45+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-sortable",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-sortable.git",
-                "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-sortable/zipball/5d852b359ffd805e1e216c8989b95d526edfb8a2",
-                "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.0|^10.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.4|^8.0",
-                "phpunit/phpunit": "^9.5|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NuvisAccounting\\Sortable\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NuvisAccounting\\Sortable\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Sortable behavior package for Laravel",
-            "keywords": [
-                "blade",
-                "column",
-                "laravel",
-                "model",
-                "sort",
-                "sortable",
-                "sorting",
-                "view"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-sortable/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-sortable/tree/2.0.2"
-            },
-            "time": "2024-07-12T11:55:40+00:00"
-        },
-        {
-            "name": "nuvisaccounting/laravel-version",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/laravel-version.git",
-                "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/laravel-version/zipball/5d632c8ce54131bbe15f22ea135934efbf1fad85",
-                "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": ">=5.2.0",
-                "php": ">=5.5.9"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Version": "NuvisAccounting\\Version\\Facade"
-                    },
-                    "providers": [
-                        "NuvisAccounting\\Version\\Provider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "NuvisAccounting\\Version\\": "./src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Duliçi",
-                    "email": "info@nuvisaccounting.com",
-                    "homepage": "https://nuvisaccounting.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Version management package for Laravel",
-            "keywords": [
-                "laravel",
-                "version"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/laravel-version/issues",
-                "source": "https://github.com/nuvisaccounting/laravel-version/tree/1.0.4"
-            },
-            "time": "2021-03-05T11:00:11+00:00"
-        },
-        {
-            "name": "nuvisaccounting/module-offline-payments",
-            "version": "3.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/module-offline-payments.git",
-                "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/module-offline-payments/zipball/9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
-                "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "description": "Offline Payments app for NuvisAccounting",
-            "homepage": "https://nuvisaccounting.com",
-            "keywords": [
-                "Accounting",
-                "nuvisaccounting",
-                "invoice",
-                "laravel",
-                "offline-payments"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/module-offline-payments/issues",
-                "source": "https://github.com/nuvisaccounting/module-offline-payments/tree/3.0.4"
-            },
-            "time": "2024-04-30T13:19:29+00:00"
-        },
-        {
-            "name": "nuvisaccounting/module-paypal-standard",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nuvisaccounting/module-paypal-standard.git",
-                "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nuvisaccounting/module-paypal-standard/zipball/798bb068fcb6accd313d8aeb5562f2a801e77c92",
-                "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0+"
-            ],
-            "description": "PayPal Standard app for NuvisAccounting",
-            "homepage": "https://nuvisaccounting.com",
-            "keywords": [
-                "Accounting",
-                "nuvisaccounting",
-                "invoice",
-                "laravel",
-                "paypal"
-            ],
-            "support": {
-                "issues": "https://github.com/nuvisaccounting/module-paypal-standard/issues",
-                "source": "https://github.com/nuvisaccounting/module-paypal-standard/tree/3.0.3"
-            },
-            "time": "2026-07-12T13:07:26+00:00"
-        },
         {
             "name": "aws/aws-crt-php",
             "version": "v1.2.7",
@@ -847,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.388.10",
+            "version": "3.391.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "25ea501f0540489bff6989cab9e7db1d12008aed"
+                "reference": "50e1ed57a0b75921efcbcabe2f8702e7508c501c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/25ea501f0540489bff6989cab9e7db1d12008aed",
-                "reference": "25ea501f0540489bff6989cab9e7db1d12008aed",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/50e1ed57a0b75921efcbcabe2f8702e7508c501c",
+                "reference": "50e1ed57a0b75921efcbcabe2f8702e7508c501c",
                 "shasum": ""
             },
             "require": {
@@ -864,9 +79,9 @@
                 "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-simplexml": "*",
-                "guzzlehttp/guzzle": "^7.4.5",
-                "guzzlehttp/promises": "^2.0",
-                "guzzlehttp/psr7": "^2.4.5",
+                "guzzlehttp/guzzle": "^7.8.2 || ^8.0",
+                "guzzlehttp/promises": "^2.0.3 || ^3.0",
+                "guzzlehttp/psr7": "^2.6.3 || ^3.0",
                 "mtdowling/jmespath.php": "^2.9.1",
                 "php": ">=8.1",
                 "psr/http-message": "^1.0 || ^2.0",
@@ -938,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.388.10"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.391.2"
             },
-            "time": "2026-07-20T18:06:03+00:00"
+            "time": "2026-08-10T18:12:09+00:00"
         },
         {
             "name": "balping/json-raw-encoder",
@@ -1414,25 +629,25 @@
         },
         {
             "name": "bugsnag/bugsnag",
-            "version": "v3.30.1",
+            "version": "v3.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bugsnag/bugsnag-php.git",
-                "reference": "cb2324147efe7aedb5177fdcd68a94f5c5bedf78"
+                "reference": "9f3f9ffae5ef6a941aaf2cc5caca4f69301e418a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/cb2324147efe7aedb5177fdcd68a94f5c5bedf78",
-                "reference": "cb2324147efe7aedb5177fdcd68a94f5c5bedf78",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/9f3f9ffae5ef6a941aaf2cc5caca4f69301e418a",
+                "reference": "9f3f9ffae5ef6a941aaf2cc5caca4f69301e418a",
                 "shasum": ""
             },
             "require": {
                 "composer/ca-bundle": "^1.0",
-                "guzzlehttp/guzzle": "^5.0|^6.0|^7.0",
+                "guzzlehttp/guzzle": "^5.0|^6.0|^7.0|^8.0",
                 "php": ">=5.5"
             },
             "require-dev": {
-                "guzzlehttp/psr7": "^1.3|^2.0",
+                "guzzlehttp/psr7": "^1.3|^2.0|^3.0",
                 "mtdowling/burgomaster": "dev-master#72151eddf5f0cf101502b94bf5031f9c53501a04",
                 "php-mock/php-mock-phpunit": "^1.1|^2.1",
                 "phpunit/phpunit": "^4.8.36|^7.5.15|^9.3.10",
@@ -1471,9 +686,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bugsnag/bugsnag-php/issues",
-                "source": "https://github.com/bugsnag/bugsnag-php/tree/v3.30.1"
+                "source": "https://github.com/bugsnag/bugsnag-php/tree/v3.31.0"
             },
-            "time": "2026-01-22T16:10:16+00:00"
+            "time": "2026-07-30T05:25:51+00:00"
         },
         {
             "name": "bugsnag/bugsnag-laravel",
@@ -2187,16 +1402,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.10.5",
+            "version": "3.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "95d84866bf3c04b2ddca1df7c049714660959aef"
+                "reference": "c95589d775a0b2e543467d40f8c3ecccf586f2b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/95d84866bf3c04b2ddca1df7c049714660959aef",
-                "reference": "95d84866bf3c04b2ddca1df7c049714660959aef",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c95589d775a0b2e543467d40f8c3ecccf586f2b4",
+                "reference": "c95589d775a0b2e543467d40f8c3ecccf586f2b4",
                 "shasum": ""
             },
             "require": {
@@ -2281,7 +1496,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.10.5"
+                "source": "https://github.com/doctrine/dbal/tree/3.10.6"
             },
             "funding": [
                 {
@@ -2297,7 +1512,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-24T08:03:57+00:00"
+            "time": "2026-07-21T12:57:49+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2669,20 +1884,20 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v3.5.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "1b2de7f4a468165dca07b142240733a1973e766d"
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/1b2de7f4a468165dca07b142240733a1973e766d",
-                "reference": "1b2de7f4a468165dca07b142240733a1973e766d",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/d61a8a9604ec1f8c3d150d09db6ce98b32675013",
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2|^8.0"
+                "php": "^8.2|^8.3|^8.4|^8.5"
             },
             "replace": {
                 "mtdowling/cron-expression": "^1.0"
@@ -2721,7 +1936,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.5.0"
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.6.0"
             },
             "funding": [
                 {
@@ -2729,7 +1944,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-31T18:36:32+00:00"
+            "time": "2025-10-31T18:51:33+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3198,21 +2413,21 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.15.1",
+            "version": "7.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "61443dfb33c62f308ee8add20f45b4d6e4bf8d2f"
+                "reference": "ae311b8f045ea93ce7b1c9cdb7cec06c53f944bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/61443dfb33c62f308ee8add20f45b4d6e4bf8d2f",
-                "reference": "61443dfb33c62f308ee8add20f45b4d6e4bf8d2f",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ae311b8f045ea93ce7b1c9cdb7cec06c53f944bc",
+                "reference": "ae311b8f045ea93ce7b1c9cdb7cec06c53f944bc",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^2.5.1",
+                "guzzlehttp/promises": "^2.5.2",
                 "guzzlehttp/psr7": "^2.13",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
@@ -3306,7 +2521,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.15.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.15.3"
             },
             "funding": [
                 {
@@ -3322,20 +2537,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-18T11:23:11+00:00"
+            "time": "2026-08-05T19:48:21+00:00"
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "9ad1e4fc607446a055b95870c7f668e93b5cff29"
+                "reference": "2823687acff28b2dbe67b2508a6b300e2c3fa4ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/9ad1e4fc607446a055b95870c7f668e93b5cff29",
-                "reference": "9ad1e4fc607446a055b95870c7f668e93b5cff29",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/2823687acff28b2dbe67b2508a6b300e2c3fa4ce",
+                "reference": "2823687acff28b2dbe67b2508a6b300e2c3fa4ce",
                 "shasum": ""
             },
             "require": {
@@ -3390,7 +2605,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.5.1"
+                "source": "https://github.com/guzzle/promises/tree/2.5.2"
             },
             "funding": [
                 {
@@ -3406,7 +2621,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-08T15:48:39+00:00"
+            "time": "2026-08-05T19:30:54+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -5556,16 +4771,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.8.3",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "1902f60f984235023acbe03db6ad614a37b3c3e7"
+                "reference": "72e9a87efcf41a8e83be3ed0866b69d77565cb12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/1902f60f984235023acbe03db6ad614a37b3c3e7",
-                "reference": "1902f60f984235023acbe03db6ad614a37b3c3e7",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/72e9a87efcf41a8e83be3ed0866b69d77565cb12",
+                "reference": "72e9a87efcf41a8e83be3ed0866b69d77565cb12",
                 "shasum": ""
             },
             "require": {
@@ -5602,7 +4817,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.9-dev"
+                    "dev-main": "2.10-dev"
                 }
             },
             "autoload": {
@@ -5659,7 +4874,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-12T15:29:16+00:00"
+            "time": "2026-08-11T00:58:45+00:00"
         },
         {
             "name": "league/config",
@@ -6116,16 +5331,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.8.2",
+            "version": "v3.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "e77fce60d0615d68dc6b8fafe98a6739d9752a24"
+                "reference": "bc06b755058e2253cc4153d95c8720c585f6254c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/e77fce60d0615d68dc6b8fafe98a6739d9752a24",
-                "reference": "e77fce60d0615d68dc6b8fafe98a6739d9752a24",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/bc06b755058e2253cc4153d95c8720c585f6254c",
+                "reference": "bc06b755058e2253cc4153d95c8720c585f6254c",
                 "shasum": ""
             },
             "require": {
@@ -6180,7 +5395,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.8.2"
+                "source": "https://github.com/livewire/livewire/tree/v3.8.4"
             },
             "funding": [
                 {
@@ -6188,7 +5403,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-27T03:14:20+00:00"
+            "time": "2026-08-10T15:24:05+00:00"
         },
         {
             "name": "lorisleiva/laravel-search-string",
@@ -6333,31 +5548,32 @@
         },
         {
             "name": "maennchen/zipstream-php",
-            "version": "3.1.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "6187e9cc4493da94b9b63eb2315821552015fca9"
+                "reference": "77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/6187e9cc4493da94b9b63eb2315821552015fca9",
-                "reference": "6187e9cc4493da94b9b63eb2315821552015fca9",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e",
+                "reference": "77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "ext-zlib": "*",
-                "php-64bit": "^8.1"
+                "php-64bit": "^8.3"
             },
             "require-dev": {
+                "brianium/paratest": "^7.7",
                 "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^3.16",
+                "friendsofphp/php-cs-fixer": "^3.86",
                 "guzzlehttp/guzzle": "^7.5",
                 "mikey179/vfsstream": "^1.6",
                 "php-coveralls/php-coveralls": "^2.5",
-                "phpunit/phpunit": "^10.0",
-                "vimeo/psalm": "^5.0"
+                "phpunit/phpunit": "^12.0",
+                "vimeo/psalm": "^6.0"
             },
             "suggest": {
                 "guzzlehttp/psr7": "^2.4",
@@ -6398,7 +5614,7 @@
             ],
             "support": {
                 "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.1"
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.2.2"
             },
             "funding": [
                 {
@@ -6406,7 +5622,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-10-10T12:33:01+00:00"
+            "time": "2026-04-11T18:38:28+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -7135,20 +6351,20 @@
         },
         {
             "name": "nette/utils",
-            "version": "v4.0.10",
+            "version": "v4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "2778deb6aab136c8db4ed1f4d6e9f465ca2dbee3"
+                "reference": "b043439dbdf954e6c28b5ea7e34b0100f83165e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/2778deb6aab136c8db4ed1f4d6e9f465ca2dbee3",
-                "reference": "2778deb6aab136c8db4ed1f4d6e9f465ca2dbee3",
+                "url": "https://api.github.com/repos/nette/utils/zipball/b043439dbdf954e6c28b5ea7e34b0100f83165e0",
+                "reference": "b043439dbdf954e6c28b5ea7e34b0100f83165e0",
                 "shasum": ""
             },
             "require": {
-                "php": "8.0 - 8.5"
+                "php": "8.2 - 8.5"
             },
             "conflict": {
                 "nette/finder": "<3",
@@ -7156,13 +6372,15 @@
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
                 "nette/tester": "^2.5",
-                "phpstan/phpstan-nette": "^2.0@stable",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
                 "tracy/tracy": "^2.9"
             },
             "suggest": {
                 "ext-gd": "to use Image",
-                "ext-iconv": "to use Strings::webalize(), toAscii(), chr() and reverse()",
+                "ext-iconv": "to use Strings::chr(), ord() and reverse()",
                 "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
                 "ext-json": "to use Nette\\Utils\\Json",
                 "ext-mbstring": "to use Strings::lower() etc...",
@@ -7171,7 +6389,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -7218,9 +6436,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.10"
+                "source": "https://github.com/nette/utils/tree/v4.1.5"
             },
-            "time": "2025-12-01T17:30:42+00:00"
+            "time": "2026-07-17T23:02:45+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -7363,6 +6581,828 @@
                 }
             ],
             "time": "2024-11-21T10:36:35+00:00"
+        },
+        {
+            "name": "nuvisaccounting/laravel-apexcharts",
+            "version": "3.2.0",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-apexcharts",
+                "reference": "9aef6f26b646b52ee5876141abc9df03d8ea1dcc"
+            },
+            "require": {
+                "balping/json-raw-encoder": "^1.0",
+                "ext-json": "*",
+                "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^8.0|^9.1.4|^10.0|^11.0",
+                "phpunit/phpunit": "^10.0|^11.0|^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Apexcharts\\Provider"
+                    ],
+                    "aliases": {
+                        "Apexcharts": "NuvisAccounting\\Apexcharts\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Apexcharts\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\Apexcharts\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cüneyt Şentürk",
+                    "email": "info@nuvisaccounting.com",
+                    "homepage": "https://nuvisaccounting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "ApexCharts package for Laravel",
+            "keywords": [
+                "apexcharts",
+                "bar",
+                "charts",
+                "donut",
+                "laravel",
+                "line",
+                "pie"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-debugbar-collector",
+            "version": "2.1.1",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-debugbar-collector",
+                "reference": "aca5ebc6b7d74e8a2f91f95eb5aad73e632b9ed9"
+            },
+            "require": {
+                "barryvdh/laravel-debugbar": ">=3.6",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=7.0",
+                "phpunit/phpunit": ">=9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\DebugbarCollector\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\DebugbarCollector\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\DebugbarCollector\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sevan Nerse",
+                    "email": "sevan@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Debugbar collector package for Akaunting",
+            "keywords": [
+                "akaunting",
+                "debugbar",
+                "laravel"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-firewall",
+            "version": "2.3.0",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-firewall",
+                "reference": "99a67ddd0d4f5cb30d6c1a572fd9ae28c88c7315"
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.8",
+                "jenssegers/agent": "2.6.*",
+                "laravel/framework": "^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0|^9.1.4|^10.0|^11.0",
+                "phpunit/phpunit": "^10.0|^11.0|^12.5.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Firewall\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Firewall\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\Firewall\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Web Application Firewall (WAF) package for Laravel",
+            "keywords": [
+                "blacklist",
+                "firewall",
+                "laravel",
+                "lfi",
+                "rfi",
+                "security",
+                "sqli",
+                "waf",
+                "xss"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-language",
+            "version": "1.0.22",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-language",
+                "reference": "7145a1c9c929eb2660a75deaceb9840d9972b6b9"
+            },
+            "require": {
+                "jenssegers/agent": "^2.6",
+                "laravel/framework": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0|^10.0|^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Language\\Provider"
+                    ],
+                    "aliases": {
+                        "Language": "NuvisAccounting\\Language\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Language\\": "./src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\Language\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit --no-coverage"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Cüneyt Şentürk",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Language switcher package for Laravel",
+            "keywords": [
+                "language",
+                "laravel",
+                "switcher"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-menu",
+            "version": "3.1.2",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-menu",
+                "reference": "deafc1ad9c36728e0f222b5d6cd73662f5905910"
+            },
+            "require": {
+                "illuminate/config": "^9.0|^10.0",
+                "illuminate/support": "^9.0|^10.0",
+                "illuminate/view": "^9.0|^10.0",
+                "laravelcollective/html": "^6.3",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.12",
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Menu\\Provider"
+                    ],
+                    "aliases": {
+                        "Menu": "NuvisAccounting\\Menu\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Menu\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\Menu\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Menu and sidebar management package for Laravel",
+            "keywords": [
+                "bootstrap",
+                "laravel",
+                "menu",
+                "navigation",
+                "sidebar"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-module",
+            "version": "4.0.3",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-module",
+                "reference": "b3dfd150121e4a7ba90295b5b97681bc8fa7b230"
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/framework": "^9.0|^10.0",
+                "orchestra/testbench": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Module\\Providers\\Laravel"
+                    ],
+                    "aliases": {
+                        "Module": "NuvisAccounting\\Module\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Module\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Module management package for Laravel",
+            "keywords": [
+                "akaunting",
+                "laravel",
+                "module",
+                "rad"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-money",
+            "version": "5.2.2",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-money",
+                "reference": "5e591ec22787e2cbc5d31bd2a5884a7deb4b84e0"
+            },
+            "require": {
+                "illuminate/contracts": "^10.0|^11.0|^12|^13",
+                "illuminate/support": "^10.0|^11.0|^12|^13",
+                "illuminate/validation": "^10.0|^11.0|^12|^13",
+                "illuminate/view": "^10.0|^11.0|^12|^13",
+                "php": "^8.2",
+                "vlucas/phpdotenv": "^5.4.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0|^9.1.4|^10|^11",
+                "phpunit/phpunit": "^10.5|^11.5.50|^12.5.8",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Money\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Money\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\Money\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "psalm": [
+                    "vendor/bin/psalm"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Currency formatting and conversion package for Laravel",
+            "keywords": [
+                "convert",
+                "currency",
+                "format",
+                "laravel",
+                "money"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-mutable-observer",
+            "version": "2.0.1",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-mutable-observer",
+                "reference": "eb6516b30ba570c48934a34d0b88dfa8ab8e6a8a"
+            },
+            "require": {
+                "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0|^8.1|^8.2|^8.3|^8.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.64",
+                "infection/infection": "^0.27",
+                "larastan/larastan": "^2.0",
+                "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.5|^10.0|^11.0",
+                "psalm/plugin-laravel": "^2.11"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\MutableObserver\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\MutableObserver\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\MutableObserver\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test:coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ],
+                "analyse": [
+                    "@phpstan",
+                    "@psalm"
+                ],
+                "phpstan": [
+                    "vendor/bin/phpstan analyse --ansi"
+                ],
+                "psalm": [
+                    "vendor/bin/psalm --show-info=true"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix --ansi"
+                ],
+                "format:check": [
+                    "vendor/bin/php-cs-fixer fix --dry-run --diff --ansi"
+                ],
+                "infection": [
+                    "vendor/bin/infection --ansi --min-msi=90 --min-covered-msi=95"
+                ],
+                "quality": [
+                    "@format:check",
+                    "@analyse",
+                    "@test"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Cüneyt Şentürk",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mutable observer package for Laravel",
+            "keywords": [
+                "laravel",
+                "mutable",
+                "mute",
+                "observer",
+                "unmute"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-setting",
+            "version": "1.2.9",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-setting",
+                "reference": "136a4314c02011d744d67b4cb834bfb88133496a"
+            },
+            "require": {
+                "laravel/framework": ">=5.3",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "laravel/framework": ">=5.3",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": ">=4.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Setting\\Provider"
+                    ],
+                    "aliases": {
+                        "Setting": "NuvisAccounting\\Setting\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Setting\\": "./src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Persistent settings package for Laravel",
+            "keywords": [
+                "config",
+                "laravel",
+                "persistent",
+                "settings"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-sortable",
+            "version": "2.0.2",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-sortable",
+                "reference": "148cc4ad763fc6e3c26d27266a7a4d5733a080b2"
+            },
+            "require": {
+                "laravel/framework": "^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0|^9.1.4|^10.0|^11.0",
+                "phpunit/phpunit": "^10.0|^11.0|^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Sortable\\Provider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Sortable\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NuvisAccounting\\Sortable\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sortable behavior package for Laravel",
+            "keywords": [
+                "blade",
+                "column",
+                "laravel",
+                "model",
+                "sort",
+                "sortable",
+                "sorting",
+                "view"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/laravel-version",
+            "version": "1.0.4",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/laravel-version",
+                "reference": "ec5de64f20355b6f9b07d5ea7d7bbb9091decd7c"
+            },
+            "require": {
+                "laravel/framework": ">=5.2.0",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NuvisAccounting\\Version\\Provider"
+                    ],
+                    "aliases": {
+                        "Version": "NuvisAccounting\\Version\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NuvisAccounting\\Version\\": "./src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Duliçi",
+                    "email": "info@akaunting.com",
+                    "homepage": "https://akaunting.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Version management package for Laravel",
+            "keywords": [
+                "laravel",
+                "version"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/module-offline-payments",
+            "version": "3.0.4",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/module-offline-payments",
+                "reference": "65375df3d108a464636d887c30a3e044eeed1572"
+            },
+            "type": "library",
+            "scripts": {
+                "test": [
+                    "composer install --prefer-dist --no-interaction --no-scripts --no-suggest --no-progress --no-ansi"
+                ]
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "Offline Payments app for Akaunting",
+            "homepage": "https://akaunting.com",
+            "keywords": [
+                "accounting",
+                "akaunting",
+                "invoice",
+                "laravel",
+                "offline-payments"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "nuvisaccounting/module-paypal-standard",
+            "version": "3.0.3",
+            "dist": {
+                "type": "path",
+                "url": "overrides/nuvisaccounting/module-paypal-standard",
+                "reference": "29af3b1a8480c09c7a29fb843e1957a9ff356e77"
+            },
+            "type": "library",
+            "scripts": {
+                "test": [
+                    "composer install --prefer-dist --no-interaction --no-scripts --no-suggest --no-progress --no-ansi"
+                ]
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "PayPal Standard app for Akaunting",
+            "homepage": "https://akaunting.com",
+            "keywords": [
+                "accounting",
+                "akaunting",
+                "invoice",
+                "laravel",
+                "paypal"
+            ],
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
         },
         {
             "name": "nyholm/psr7",
@@ -9370,30 +9410,33 @@
         },
         {
             "name": "sanmai/hoa-protocol",
-            "version": "1.21",
+            "version": "1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/Protocol.git",
-                "reference": "3cf1a72c12fed6aa0169433a10f0275face91362"
+                "reference": "56ec202c7c31dcc4639febf3956c8c0f5ddee9db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/Protocol/zipball/3cf1a72c12fed6aa0169433a10f0275face91362",
-                "reference": "3cf1a72c12fed6aa0169433a10f0275face91362",
+                "url": "https://api.github.com/repos/sanmai/Protocol/zipball/56ec202c7c31dcc4639febf3956c8c0f5ddee9db",
+                "reference": "56ec202c7c31dcc4639febf3956c8c0f5ddee9db",
                 "shasum": ""
             },
             "require": {
                 "hoa/consistency": "*",
                 "hoa/exception": "*",
-                "php": ">=7.0"
+                "php": "^8.2"
             },
             "replace": {
                 "hoa/protocol": "*"
             },
             "require-dev": {
-                "atoum/atoum": "^3",
-                "atoum/stubs": "*",
-                "hoa/test": "*"
+                "bamarni/composer-bin-plugin": "^1.8",
+                "friendsofphp/php-cs-fixer": "^3.84",
+                "hoa/consistency": "^2.17",
+                "hoa/exception": "^2.17",
+                "infection/infection": "^0.30.3",
+                "phpunit/phpunit": "^11"
             },
             "type": "library",
             "extra": {
@@ -9432,9 +9475,16 @@
             ],
             "support": {
                 "issues": "https://github.com/sanmai/Protocol/issues",
-                "source": "https://github.com/sanmai/Protocol/tree/1.21"
+                "source": "https://github.com/sanmai/Protocol/tree/1.25.1"
             },
-            "time": "2021-01-01T15:57:23+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sanmai",
+                    "type": "github"
+                }
+            ],
+            "abandoned": true,
+            "time": "2025-07-26T04:04:56+00:00"
         },
         {
             "name": "santigarcor/laratrust",
@@ -9513,23 +9563,23 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "4.29.0",
+            "version": "4.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "d732a4da195f231cedb2a2a78ae16dd73082afa3"
+                "reference": "95a26e7c946651cacd69d1ded95a8190f952a3ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/d732a4da195f231cedb2a2a78ae16dd73082afa3",
-                "reference": "d732a4da195f231cedb2a2a78ae16dd73082afa3",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/95a26e7c946651cacd69d1ded95a8190f952a3ae",
+                "reference": "95a26e7c946651cacd69d1ded95a8190f952a3ae",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "guzzlehttp/psr7": "^1.8.4|^2.1.1",
+                "guzzlehttp/psr7": "^1.8.4|^2.1.1|^3.0.0",
                 "jean85/pretty-package-versions": "^1.5|^2.0.4",
                 "php": "^7.2|^8.0",
                 "psr/log": "^1.0|^2.0|^3.0",
@@ -9541,12 +9591,14 @@
             "require-dev": {
                 "carthage-software/mago": "1.30.0",
                 "friendsofphp/php-cs-fixer": "^3.4",
-                "guzzlehttp/promises": "^2.0.3",
+                "guzzlehttp/guzzle": "^7.0|^8.0",
+                "guzzlehttp/promises": "^2.0.3|^3.0.0",
                 "monolog/monolog": "^1.6|^2.0|^3.0",
                 "nyholm/psr7": "^1.8",
-                "open-telemetry/api": "^1.0",
-                "open-telemetry/exporter-otlp": "^1.0",
-                "open-telemetry/sdk": "^1.0",
+                "open-telemetry/api": "^1.1",
+                "open-telemetry/context": "^1.1",
+                "open-telemetry/exporter-otlp": "^1.1",
+                "open-telemetry/sdk": "^1.1",
                 "open-telemetry/sem-conv": "^1.27",
                 "phpstan/phpstan": "^1.3",
                 "phpunit/phpunit": "^8.5.52|^9.6.34",
@@ -9591,7 +9643,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/4.29.0"
+                "source": "https://github.com/getsentry/sentry-php/tree/4.30.0"
             },
             "funding": [
                 {
@@ -9603,7 +9655,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2026-06-29T14:47:44+00:00"
+            "time": "2026-08-05T14:54:26+00:00"
         },
         {
             "name": "sentry/sentry-laravel",
@@ -9970,16 +10022,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.4.42",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9ef84af84a7b66396da483634227650506428639"
+                "reference": "3b643aa587acbc42f967a429af088a56ed8f046d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9ef84af84a7b66396da483634227650506428639",
-                "reference": "9ef84af84a7b66396da483634227650506428639",
+                "url": "https://api.github.com/repos/symfony/console/zipball/3b643aa587acbc42f967a429af088a56ed8f046d",
+                "reference": "3b643aa587acbc42f967a429af088a56ed8f046d",
                 "shasum": ""
             },
             "require": {
@@ -10044,7 +10096,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.4.42"
+                "source": "https://github.com/symfony/console/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -10064,24 +10116,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-15T05:35:29+00:00"
+            "time": "2026-07-26T14:44:19+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v6.4.34",
+            "version": "v7.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "b0314c186f1464de048cce58979ff1625ca88bbb"
+                "reference": "b75663ed96cf4756e28e3105476f220f92886cc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/b0314c186f1464de048cce58979ff1625ca88bbb",
-                "reference": "b0314c186f1464de048cce58979ff1625ca88bbb",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/b75663ed96cf4756e28e3105476f220f92886cc4",
+                "reference": "b75663ed96cf4756e28e3105476f220f92886cc4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -10113,7 +10165,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v6.4.34"
+                "source": "https://github.com/symfony/css-selector/tree/v7.4.9"
             },
             "funding": [
                 {
@@ -10133,7 +10185,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-16T08:37:21+00:00"
+            "time": "2026-04-18T13:18:21+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -10208,16 +10260,16 @@
         },
         {
             "name": "symfony/error-handler",
-            "version": "v6.4.36",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/error-handler.git",
-                "reference": "2ea68f0e1835ad6a126f93bbc14cd236c10ab361"
+                "reference": "ecec4c500623ee0ac0c925c3426bcb3e7f429b14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/error-handler/zipball/2ea68f0e1835ad6a126f93bbc14cd236c10ab361",
-                "reference": "2ea68f0e1835ad6a126f93bbc14cd236c10ab361",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/ecec4c500623ee0ac0c925c3426bcb3e7f429b14",
+                "reference": "ecec4c500623ee0ac0c925c3426bcb3e7f429b14",
                 "shasum": ""
             },
             "require": {
@@ -10263,7 +10315,7 @@
             "description": "Provides tools to manage errors and ease debugging PHP code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/error-handler/tree/v6.4.36"
+                "source": "https://github.com/symfony/error-handler/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -10283,28 +10335,28 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-03-10T15:56:14+00:00"
+            "time": "2026-07-21T10:11:50+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v6.4.37",
+            "version": "v7.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "2e3bf817ba9347341ab15926700fb6320367c0e1"
+                "reference": "336e7f3b9e95aba04f93ea9143920c2186abfbb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2e3bf817ba9347341ab15926700fb6320367c0e1",
-                "reference": "2e3bf817ba9347341ab15926700fb6320367c0e1",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/336e7f3b9e95aba04f93ea9143920c2186abfbb9",
+                "reference": "336e7f3b9e95aba04f93ea9143920c2186abfbb9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/event-dispatcher-contracts": "^2.5|^3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<5.4",
+                "symfony/dependency-injection": "<6.4",
                 "symfony/service-contracts": "<2.5"
             },
             "provide": {
@@ -10313,13 +10365,14 @@
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
-                "symfony/error-handler": "^5.4|^6.0|^7.0",
-                "symfony/expression-language": "^5.4|^6.0|^7.0",
-                "symfony/http-foundation": "^5.4|^6.0|^7.0",
+                "symfony/config": "^6.4|^7.0|^8.0",
+                "symfony/dependency-injection": "^6.4|^7.0|^8.0",
+                "symfony/error-handler": "^6.4|^7.0|^8.0",
+                "symfony/expression-language": "^6.4|^7.0|^8.0",
+                "symfony/framework-bundle": "^6.4|^7.0|^8.0",
+                "symfony/http-foundation": "^6.4|^7.0|^8.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0"
+                "symfony/stopwatch": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -10347,7 +10400,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.37"
+                "source": "https://github.com/symfony/event-dispatcher/tree/v7.4.15"
             },
             "funding": [
                 {
@@ -10367,7 +10420,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-13T14:11:12+00:00"
+            "time": "2026-07-21T15:13:06+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -10451,25 +10504,25 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.4.39",
+            "version": "v7.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "c507b077756b4e3e09adbbe7975fac81cd3722ca"
+                "reference": "ff16a16bf87fdf264638b8f6995b3515975e3c79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c507b077756b4e3e09adbbe7975fac81cd3722ca",
-                "reference": "c507b077756b4e3e09adbbe7975fac81cd3722ca",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/ff16a16bf87fdf264638b8f6995b3515975e3c79",
+                "reference": "ff16a16bf87fdf264638b8f6995b3515975e3c79",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.8"
             },
             "require-dev": {
-                "symfony/process": "^5.4|^6.4|^7.0"
+                "symfony/process": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -10497,7 +10550,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v6.4.39"
+                "source": "https://github.com/symfony/filesystem/tree/v7.4.15"
             },
             "funding": [
                 {
@@ -10517,7 +10570,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-07T13:11:42+00:00"
+            "time": "2026-07-22T07:36:05+00:00"
         },
         {
             "name": "symfony/finder",
@@ -10589,16 +10642,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v6.4.42",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "b71b312ca0f211fbb19a20a51bde50fbefb66a99"
+                "reference": "38540911e9e3c3ca12e562dcce758d9bfcfa7cdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/b71b312ca0f211fbb19a20a51bde50fbefb66a99",
-                "reference": "b71b312ca0f211fbb19a20a51bde50fbefb66a99",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/38540911e9e3c3ca12e562dcce758d9bfcfa7cdd",
+                "reference": "38540911e9e3c3ca12e562dcce758d9bfcfa7cdd",
                 "shasum": ""
             },
             "require": {
@@ -10663,7 +10716,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v6.4.42"
+                "source": "https://github.com/symfony/http-client/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -10683,7 +10736,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-12T09:42:32+00:00"
+            "time": "2026-07-29T06:36:08+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -10769,16 +10822,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v6.4.42",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "23dcf8e0f59cbbfa9d2894f58fd8be6833794372"
+                "reference": "ea0c801ec34e9017a8c9363e55c8ef5f1717216e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/23dcf8e0f59cbbfa9d2894f58fd8be6833794372",
-                "reference": "23dcf8e0f59cbbfa9d2894f58fd8be6833794372",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ea0c801ec34e9017a8c9363e55c8ef5f1717216e",
+                "reference": "ea0c801ec34e9017a8c9363e55c8ef5f1717216e",
                 "shasum": ""
             },
             "require": {
@@ -10826,7 +10879,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v6.4.42"
+                "source": "https://github.com/symfony/http-foundation/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -10846,20 +10899,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-16T10:12:24+00:00"
+            "time": "2026-07-29T06:55:26+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v6.4.42",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "51fd5bb7d4f221ceeac927e14ade63962e27a47c"
+                "reference": "cc35556a9bc9e9a6a35fb1114609d1e3c9a63738"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/51fd5bb7d4f221ceeac927e14ade63962e27a47c",
-                "reference": "51fd5bb7d4f221ceeac927e14ade63962e27a47c",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/cc35556a9bc9e9a6a35fb1114609d1e3c9a63738",
+                "reference": "cc35556a9bc9e9a6a35fb1114609d1e3c9a63738",
                 "shasum": ""
             },
             "require": {
@@ -10916,7 +10969,7 @@
                 "symfony/validator": "^6.4|^7.0",
                 "symfony/var-dumper": "^5.4|^6.4|^7.0",
                 "symfony/var-exporter": "^6.2|^7.0",
-                "twig/twig": "^2.13|^3.0.4"
+                "twig/twig": "^2.13|^3.0.4|^4.0"
             },
             "type": "library",
             "autoload": {
@@ -10944,7 +10997,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v6.4.42"
+                "source": "https://github.com/symfony/http-kernel/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -10964,20 +11017,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-27T09:10:20+00:00"
+            "time": "2026-07-29T11:30:30+00:00"
         },
         {
             "name": "symfony/mailer",
-            "version": "v6.4.40",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "94fd44f3052e02340b0dd4447a7d7a5856e32da2"
+                "reference": "2a380924b56e034076c4a658d40e140ba150e44c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/94fd44f3052e02340b0dd4447a7d7a5856e32da2",
-                "reference": "94fd44f3052e02340b0dd4447a7d7a5856e32da2",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/2a380924b56e034076c4a658d40e140ba150e44c",
+                "reference": "2a380924b56e034076c4a658d40e140ba150e44c",
                 "shasum": ""
             },
             "require": {
@@ -11028,7 +11081,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v6.4.40"
+                "source": "https://github.com/symfony/mailer/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -11048,7 +11101,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-19T20:33:22+00:00"
+            "time": "2026-07-27T19:43:14+00:00"
         },
         {
             "name": "symfony/mailgun-mailer",
@@ -11125,16 +11178,16 @@
         },
         {
             "name": "symfony/mime",
-            "version": "v6.4.41",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "5575d37f8841e4e31d5df79ab3db078ae557ff8e"
+                "reference": "38421e10911725aaa5e44e1b4606d7a37f652b37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/5575d37f8841e4e31d5df79ab3db078ae557ff8e",
-                "reference": "5575d37f8841e4e31d5df79ab3db078ae557ff8e",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/38421e10911725aaa5e44e1b4606d7a37f652b37",
+                "reference": "38421e10911725aaa5e44e1b4606d7a37f652b37",
                 "shasum": ""
             },
             "require": {
@@ -11190,7 +11243,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v6.4.41"
+                "source": "https://github.com/symfony/mime/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -11210,24 +11263,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-23T14:40:34+00:00"
+            "time": "2026-07-29T07:59:11+00:00"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v6.4.30",
+            "version": "v7.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "eeaa8cabe54c7b3516938c72a4a161c0cc80a34f"
+                "reference": "2888fcdc4dc2fd5f7c7397be78631e8af12e02b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/eeaa8cabe54c7b3516938c72a4a161c0cc80a34f",
-                "reference": "eeaa8cabe54c7b3516938c72a4a161c0cc80a34f",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/2888fcdc4dc2fd5f7c7397be78631e8af12e02b4",
+                "reference": "2888fcdc4dc2fd5f7c7397be78631e8af12e02b4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "symfony/deprecation-contracts": "^2.5|^3"
             },
             "type": "library",
@@ -11261,7 +11314,7 @@
                 "options"
             ],
             "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v6.4.30"
+                "source": "https://github.com/symfony/options-resolver/tree/v7.4.8"
             },
             "funding": [
                 {
@@ -11281,7 +11334,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-11-12T13:06:53+00:00"
+            "time": "2026-03-24T13:12:05+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -11368,16 +11421,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.38.1",
+            "version": "v1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "e9247d281d694a5120554d9afaf54e070e88a603"
+                "reference": "bb899c1db0aa8127dc3afe8cda4a67eb24915f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/e9247d281d694a5120554d9afaf54e070e88a603",
-                "reference": "e9247d281d694a5120554d9afaf54e070e88a603",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/bb899c1db0aa8127dc3afe8cda4a67eb24915f8d",
+                "reference": "bb899c1db0aa8127dc3afe8cda4a67eb24915f8d",
                 "shasum": ""
             },
             "require": {
@@ -11426,7 +11479,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.38.1"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.41.0"
             },
             "funding": [
                 {
@@ -11446,7 +11499,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-26T05:58:03+00:00"
+            "time": "2026-07-28T08:25:59+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -11791,16 +11844,16 @@
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.38.2",
+            "version": "v1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
-                "reference": "796a26abb75ce49f3a84433cd81bf1009d73d5f8"
+                "reference": "5ea99087fb99c273a9b9236ed4c31e78b16103c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/796a26abb75ce49f3a84433cd81bf1009d73d5f8",
-                "reference": "796a26abb75ce49f3a84433cd81bf1009d73d5f8",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/5ea99087fb99c273a9b9236ed4c31e78b16103c6",
+                "reference": "5ea99087fb99c273a9b9236ed4c31e78b16103c6",
                 "shasum": ""
             },
             "require": {
@@ -11847,7 +11900,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.38.2"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.41.0"
             },
             "funding": [
                 {
@@ -11867,7 +11920,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-27T06:51:48+00:00"
+            "time": "2026-07-01T12:47:55+00:00"
         },
         {
             "name": "symfony/polyfill-php84",
@@ -12173,36 +12226,37 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v6.4.32",
+            "version": "v7.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "740017f61ce31b4aca485a18a25c0310ebd0190f"
+                "reference": "76f1a57719a4a04c0ea18678a6c9305b5dcb9da8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/740017f61ce31b4aca485a18a25c0310ebd0190f",
-                "reference": "740017f61ce31b4aca485a18a25c0310ebd0190f",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/76f1a57719a4a04c0ea18678a6c9305b5dcb9da8",
+                "reference": "76f1a57719a4a04c0ea18678a6c9305b5dcb9da8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "psr/http-message": "^1.0|^2.0",
-                "symfony/http-foundation": "^5.4|^6.0|^7.0"
+                "symfony/http-foundation": "^6.4|^7.0|^8.0"
             },
             "conflict": {
                 "php-http/discovery": "<1.15",
-                "symfony/http-kernel": "<6.2"
+                "symfony/http-kernel": "<6.4"
             },
             "require-dev": {
                 "nyholm/psr7": "^1.1",
                 "php-http/discovery": "^1.15",
                 "psr/log": "^1.1.4|^2|^3",
-                "symfony/browser-kit": "^5.4|^6.0|^7.0",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
-                "symfony/framework-bundle": "^6.2|^7.0",
-                "symfony/http-kernel": "^6.2|^7.0"
+                "symfony/browser-kit": "^6.4|^7.0|^8.0",
+                "symfony/config": "^6.4|^7.0|^8.0",
+                "symfony/event-dispatcher": "^6.4|^7.0|^8.0",
+                "symfony/framework-bundle": "^6.4.13|^7.1.6|^8.0",
+                "symfony/http-kernel": "^6.4.13|^7.1.6|^8.0",
+                "symfony/runtime": "^6.4.13|^7.1.6|^8.0"
             },
             "type": "symfony-bridge",
             "autoload": {
@@ -12236,7 +12290,7 @@
                 "psr-7"
             ],
             "support": {
-                "source": "https://github.com/symfony/psr-http-message-bridge/tree/v6.4.32"
+                "source": "https://github.com/symfony/psr-http-message-bridge/tree/v7.4.8"
             },
             "funding": [
                 {
@@ -12256,20 +12310,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-02T11:59:06+00:00"
+            "time": "2026-03-24T13:12:05+00:00"
         },
         {
             "name": "symfony/routing",
-            "version": "v6.4.41",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "af04c79671fd8df0805a44c83fa2b0ba56c8329e"
+                "reference": "f8dedd42e7a511906aa54be6cebffbbe826ff20e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/af04c79671fd8df0805a44c83fa2b0ba56c8329e",
-                "reference": "af04c79671fd8df0805a44c83fa2b0ba56c8329e",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/f8dedd42e7a511906aa54be6cebffbbe826ff20e",
+                "reference": "f8dedd42e7a511906aa54be6cebffbbe826ff20e",
                 "shasum": ""
             },
             "require": {
@@ -12323,7 +12377,7 @@
                 "url"
             ],
             "support": {
-                "source": "https://github.com/symfony/routing/tree/v6.4.41"
+                "source": "https://github.com/symfony/routing/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -12343,7 +12397,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-24T11:18:16+00:00"
+            "time": "2026-07-21T13:51:56+00:00"
         },
         {
             "name": "symfony/sendgrid-mailer",
@@ -12508,22 +12562,23 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.4.39",
+            "version": "v7.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "62e3c927de664edadb5bef260987eb047a17a113"
+                "reference": "e394af32256bf9e7bf80849d95e589167c10097b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/62e3c927de664edadb5bef260987eb047a17a113",
-                "reference": "62e3c927de664edadb5bef260987eb047a17a113",
+                "url": "https://api.github.com/repos/symfony/string/zipball/e394af32256bf9e7bf80849d95e589167c10097b",
+                "reference": "e394af32256bf9e7bf80849d95e589167c10097b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3.0",
                 "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-intl-grapheme": "~1.0",
+                "symfony/polyfill-intl-grapheme": "~1.33",
                 "symfony/polyfill-intl-normalizer": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
@@ -12531,10 +12586,11 @@
                 "symfony/translation-contracts": "<2.5"
             },
             "require-dev": {
-                "symfony/http-client": "^5.4|^6.0|^7.0",
-                "symfony/intl": "^6.2|^7.0",
+                "symfony/emoji": "^7.1|^8.0",
+                "symfony/http-client": "^6.4|^7.0|^8.0",
+                "symfony/intl": "^6.4|^7.0|^8.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
-                "symfony/var-exporter": "^5.4|^6.0|^7.0"
+                "symfony/var-exporter": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -12573,7 +12629,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.4.39"
+                "source": "https://github.com/symfony/string/tree/v7.4.15"
             },
             "funding": [
                 {
@@ -12593,7 +12649,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-05-12T11:44:19+00:00"
+            "time": "2026-07-28T07:33:02+00:00"
         },
         {
             "name": "symfony/translation",
@@ -12856,16 +12912,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v6.4.42",
+            "version": "v6.4.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "29adc5e34255f42ca9b8ae61c22b4d9e3f611317"
+                "reference": "6638cfe00907b2b980b749fcf2cd4cd6b2b1396e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/29adc5e34255f42ca9b8ae61c22b4d9e3f611317",
-                "reference": "29adc5e34255f42ca9b8ae61c22b4d9e3f611317",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/6638cfe00907b2b980b749fcf2cd4cd6b2b1396e",
+                "reference": "6638cfe00907b2b980b749fcf2cd4cd6b2b1396e",
                 "shasum": ""
             },
             "require": {
@@ -12882,7 +12938,7 @@
                 "symfony/http-kernel": "^5.4|^6.0|^7.0",
                 "symfony/process": "^5.4|^6.0|^7.0",
                 "symfony/uid": "^5.4|^6.0|^7.0",
-                "twig/twig": "^2.13|^3.0.4"
+                "twig/twig": "^2.13|^3.0.4|^4.0"
             },
             "bin": [
                 "Resources/bin/var-dump-server"
@@ -12920,7 +12976,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v6.4.42"
+                "source": "https://github.com/symfony/var-dumper/tree/v6.4.43"
             },
             "funding": [
                 {
@@ -12940,7 +12996,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-06-08T07:06:12+00:00"
+            "time": "2026-07-06T08:03:42+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -13224,16 +13280,16 @@
         },
         {
             "name": "brianium/paratest",
-            "version": "v7.3.2",
+            "version": "v7.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paratestphp/paratest.git",
-                "reference": "553f39a2f3d86c14e0234a40cff7e4055facbf60"
+                "reference": "633c0987ecf6d9b057431225da37b088aa9274a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/553f39a2f3d86c14e0234a40cff7e4055facbf60",
-                "reference": "553f39a2f3d86c14e0234a40cff7e4055facbf60",
+                "url": "https://api.github.com/repos/paratestphp/paratest/zipball/633c0987ecf6d9b057431225da37b088aa9274a5",
+                "reference": "633c0987ecf6d9b057431225da37b088aa9274a5",
                 "shasum": ""
             },
             "require": {
@@ -13241,32 +13297,30 @@
                 "ext-pcre": "*",
                 "ext-reflection": "*",
                 "ext-simplexml": "*",
-                "fidry/cpu-core-counter": "^0.5.1 || ^1.0.0",
-                "jean85/pretty-package-versions": "^2.0.5",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-                "phpunit/php-code-coverage": "^10.1.7",
+                "fidry/cpu-core-counter": "^1.2.0",
+                "jean85/pretty-package-versions": "^2.0.6",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
+                "phpunit/php-code-coverage": "^10.1.16",
                 "phpunit/php-file-iterator": "^4.1.0",
-                "phpunit/php-timer": "^6.0",
-                "phpunit/phpunit": "^10.5.62",
-                "sebastian/environment": "^6.0.1",
-                "symfony/console": "^6.3.4 || ^7.0.0",
-                "symfony/process": "^6.3.4 || ^7.0.0"
+                "phpunit/php-timer": "^6.0.0",
+                "phpunit/phpunit": "^10.5.47",
+                "sebastian/environment": "^6.1.0",
+                "symfony/console": "^6.4.7 || ^7.1.5",
+                "symfony/process": "^6.4.7 || ^7.1.5"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^12.0.0",
                 "ext-pcov": "*",
                 "ext-posix": "*",
-                "infection/infection": "^0.27.6",
-                "phpstan/phpstan": "^1.12.32",
-                "phpstan/phpstan-deprecation-rules": "^1.1.4",
-                "phpstan/phpstan-phpunit": "^1.3.15",
-                "phpstan/phpstan-strict-rules": "^1.5.2",
-                "squizlabs/php_codesniffer": "^3.7.2",
-                "symfony/filesystem": "^6.3.1 || ^7.0.0"
+                "phpstan/phpstan": "^1.12.6",
+                "phpstan/phpstan-deprecation-rules": "^1.2.1",
+                "phpstan/phpstan-phpunit": "^1.4.0",
+                "phpstan/phpstan-strict-rules": "^1.6.1",
+                "squizlabs/php_codesniffer": "^3.10.3",
+                "symfony/filesystem": "^6.4.3 || ^7.1.5"
             },
             "bin": [
                 "bin/paratest",
-                "bin/paratest.bat",
                 "bin/paratest_for_phpstorm"
             ],
             "type": "library",
@@ -13303,7 +13357,7 @@
             ],
             "support": {
                 "issues": "https://github.com/paratestphp/paratest/issues",
-                "source": "https://github.com/paratestphp/paratest/tree/v7.3.2"
+                "source": "https://github.com/paratestphp/paratest/tree/v7.4.9"
             },
             "funding": [
                 {
@@ -13315,7 +13369,7 @@
                     "type": "paypal"
                 }
             ],
-            "time": "2026-02-10T07:06:59+00:00"
+            "time": "2025-06-25T06:09:59+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -15104,16 +15158,16 @@
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "47e34210757a2f37a97dcd207d032e1b01e64c7a"
+                "reference": "5d32fe257a9b39cb63146924d6b4e32a22d4502a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/47e34210757a2f37a97dcd207d032e1b01e64c7a",
-                "reference": "47e34210757a2f37a97dcd207d032e1b01e64c7a",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/5d32fe257a9b39cb63146924d6b4e32a22d4502a",
+                "reference": "5d32fe257a9b39cb63146924d6b4e32a22d4502a",
                 "shasum": ""
             },
             "require": {
@@ -15156,7 +15210,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
                 "security": "https://github.com/sebastianbergmann/recursion-context/security/policy",
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/5.0.1"
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/5.0.2"
             },
             "funding": [
                 {
@@ -15176,7 +15230,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-10T07:50:56+00:00"
+            "time": "2026-08-11T05:27:39+00:00"
         },
         {
             "name": "sebastian/type",
@@ -15673,25 +15727,25 @@
         },
         {
             "name": "stefanzweifel/laravel-stats-phploc",
-            "version": "8.0.6",
+            "version": "8.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanzweifel/phploc.git",
-                "reference": "576c967f46293d97d74d3dafac36b80cd84e8429"
+                "reference": "1ec27b4f3ebf4f61fd5c0da2715e9808bd6d97f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanzweifel/phploc/zipball/576c967f46293d97d74d3dafac36b80cd84e8429",
-                "reference": "576c967f46293d97d74d3dafac36b80cd84e8429",
+                "url": "https://api.github.com/repos/stefanzweifel/phploc/zipball/1ec27b4f3ebf4f61fd5c0da2715e9808bd6d97f6",
+                "reference": "1ec27b4f3ebf4f61fd5c0da2715e9808bd6d97f6",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-json": "*",
                 "php": "^8.0",
-                "phpunit/php-file-iterator": "^3.0 || ^4.0 || ^5.0 || ^6.0",
-                "sebastian/cli-parser": "^1.0 || ^2.0 || ^3.0 || ^4.0",
-                "sebastian/version": "^2.0 || ^3.0 || ^4.0 || ^5.0 || ^6.0"
+                "phpunit/php-file-iterator": "^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
+                "sebastian/cli-parser": "^1.0 || ^2.0 || ^3.0 || ^4.0 || ^5.0",
+                "sebastian/version": "^2.0 || ^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "bin": [
                 "phploc"
@@ -15726,7 +15780,7 @@
             "homepage": "https://github.com/stefanzweifel/phploc",
             "support": {
                 "issues": "https://github.com/stefanzweifel/phploc/issues",
-                "source": "https://github.com/stefanzweifel/phploc/tree/8.0.6"
+                "source": "https://github.com/stefanzweifel/phploc/tree/8.0.8"
             },
             "funding": [
                 {
@@ -15734,7 +15788,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-10-12T16:07:39+00:00"
+            "time": "2026-07-29T06:25:32+00:00"
         },
         {
             "name": "theseer/tokenizer",

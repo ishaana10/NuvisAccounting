@@ -1,0 +1,76 @@
+{
+    "name": "nuvisaccounting/laravel-mutable-observer",
+    "description": "Mutable observer package for Laravel",
+    "keywords": [
+        "laravel",
+        "observer",
+        "mutable",
+        "mute",
+        "unmute"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Duli\u00e7i",
+            "email": "info@akaunting.com",
+            "homepage": "https://akaunting.com",
+            "role": "Developer"
+        },
+        {
+            "name": "C\u00fcneyt \u015eent\u00fcrk",
+            "email": "info@akaunting.com",
+            "homepage": "https://akaunting.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2|^8.3|^8.4",
+        "laravel/framework": "^9.0|^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.4|^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^9.5|^10.0|^11.0",
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "larastan/larastan": "^2.0",
+        "infection/infection": "^0.27",
+        "psalm/plugin-laravel": "^2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "NuvisAccounting\\MutableObserver\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NuvisAccounting\\MutableObserver\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NuvisAccounting\\MutableObserver\\Provider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "analyse": [
+            "@phpstan",
+            "@psalm"
+        ],
+        "phpstan": "vendor/bin/phpstan analyse --ansi",
+        "psalm": "vendor/bin/psalm --show-info=true",
+        "format": "vendor/bin/php-cs-fixer fix --ansi",
+        "format:check": "vendor/bin/php-cs-fixer fix --dry-run --diff --ansi",
+        "infection": "vendor/bin/infection --ansi --min-msi=90 --min-covered-msi=95",
+        "quality": [
+            "@format:check",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "2.0.1"
+}
