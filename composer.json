@@ -316,6 +316,9 @@
                 "PKSA-xf4x-p5c1-z9xq",
                 "PKSA-fwj1-r2kg-bmxd"
             ]
+        },
+        "platform": {
+            "php": "8.1.0"
         }
     }
 }
