@@ -19,7 +19,7 @@ trait Mutable
      *
      * @var string
      */
-    public const WILDCARD_EVENT = '*';
+    public static $WILDCARD_EVENT = '*';
 
     /**
      * Mute the specified observer events.
@@ -55,7 +55,7 @@ trait Mutable
     protected static function normalizeEvents(string|array|null $events): array
     {
         if (is_null($events)) {
-            $events = [self::WILDCARD_EVENT];
+            $events = [self::$WILDCARD_EVENT];
         }
 
         if (! is_array($events)) {
