@@ -199,9 +199,6 @@ class TransactionsTest extends FeatureTestCase
 
         Excel::fake();
 
-        $response = $this->loginAs()->get(route('transactions.export'));
-        dd($response->getStatusCode(), $response->headers->get('Location'), $response->getContent());
-
         $this->loginAs()
             ->get(route('transactions.export'))
             ->assertStatus(200);
