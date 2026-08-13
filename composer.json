@@ -109,12 +109,27 @@
             "NuvisAccounting\\Module\\Commands\\": "overrides/nuvisaccounting/laravel-module/Commands/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeds\\": "database/seeds/",
-            "Illuminate\\Translation\\": "overrides/Illuminate/Translation/",
-            "Illuminate\\View\\Concerns\\": "overrides/Illuminate/View/Concerns/",
-            "Livewire\\": "overrides/livewire/livewire/",
-            "Maatwebsite\\Excel\\": "overrides/maatwebsite/excel/",
+            "Illuminate\\Translation\\": [
+                "overrides/Illuminate/Translation/",
+                "vendor/laravel/framework/src/Illuminate/Translation/"
+            ],
+            "Illuminate\\View\\Concerns\\": [
+                "overrides/Illuminate/View/Concerns/",
+                "vendor/laravel/framework/src/Illuminate/View/Concerns/"
+            ],
+            "Livewire\\": [
+                "overrides/livewire/livewire/",
+                "vendor/livewire/livewire/src/"
+            ],
+            "Maatwebsite\\Excel\\": [
+                "overrides/maatwebsite/excel/",
+                "vendor/maatwebsite/excel/src/"
+            ],
             "Modules\\": "modules/",
-            "Symfony\\Component\\Process\\": "overrides/symfony/process/"
+            "Symfony\\Component\\Process\\": [
+                "overrides/symfony/process/",
+                "vendor/symfony/process/"
+            ]
         },
         "exclude-from-classmap": [
             "vendor/nuvisaccounting/laravel-module/src/Commands/DeleteCommand.php",
