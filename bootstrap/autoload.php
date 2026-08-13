@@ -332,11 +332,18 @@ if (!function_exists('run_diagnostics_checklist')) {
                     'error' => "Cannot check; 'vendor/autoload.php' is missing."
                 ];
             } else {
-                $passed = class_exists($class) || interface_exists($class) || trait_exists($class);
-                $checklist['framework_classes'][$class] = [
-                    'passed' => $passed,
-                    'error' => $passed ? null : "Class/interface '$class' is missing from '$package'. The package might be missing or incomplete."
-                ];
+                try {
+                    $passed = class_exists($class) || interface_exists($class) || trait_exists($class);
+                    $checklist['framework_classes'][$class] = [
+                        'passed' => $passed,
+                        'error' => $passed ? null : "Class/interface '$class' is missing from '$package'. The package might be missing or incomplete."
+                    ];
+                } catch (Throwable $t) {
+                    $checklist['framework_classes'][$class] = [
+                        'passed' => false,
+                        'error' => "Autoloading error: " . $t->getMessage()
+                    ];
+                }
             }
         }
 
@@ -352,11 +359,18 @@ if (!function_exists('run_diagnostics_checklist')) {
                     'error' => "Cannot check; 'vendor/autoload.php' is missing."
                 ];
             } else {
-                $passed = class_exists($class) || interface_exists($class) || trait_exists($class);
-                $checklist['override_modules'][$class] = [
-                    'passed' => $passed,
-                    'error' => $passed ? null : "Autoload mapping for '$class' from directory '$path' failed. Check override composer settings."
-                ];
+                try {
+                    $passed = class_exists($class) || interface_exists($class) || trait_exists($class);
+                    $checklist['override_modules'][$class] = [
+                        'passed' => $passed,
+                        'error' => $passed ? null : "Autoload mapping for '$class' from directory '$path' failed. Check override composer settings."
+                    ];
+                } catch (Throwable $t) {
+                    $checklist['override_modules'][$class] = [
+                        'passed' => false,
+                        'error' => "Autoloading error: " . $t->getMessage()
+                    ];
+                }
             }
         }
 
