@@ -9,14 +9,18 @@ class RepoUpdatesTest extends FeatureTestCase
 {
     public function testItShouldPreventUnauthorizedUserFromPulling()
     {
+        $this->withExceptionHandling();
+
         // Unauthenticated users should be redirected or unauthorized
-        $this->post(route('updates.repo-pull'))
+        $this->post(route('updates.repo-pull', ['company_id' => 1]))
             ->assertStatus(302); // Redirect to login
     }
 
     public function testItShouldPreventUnauthorizedUserFromReadingLogs()
     {
-        $this->get(route('updates.repo-logs'))
+        $this->withExceptionHandling();
+
+        $this->get(route('updates.repo-logs', ['company_id' => 1]))
             ->assertStatus(302); // Redirect to login
     }
 
