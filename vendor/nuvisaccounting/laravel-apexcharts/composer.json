@@ -1,0 +1,57 @@
+{
+    "name": "nuvisaccounting/laravel-apexcharts",
+    "version": "3.2.0",
+    "description": "ApexCharts package for Laravel",
+    "keywords": [
+        "laravel",
+        "line",
+        "bar",
+        "pie",
+        "donut",
+        "charts",
+        "apexcharts"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cüneyt Şentürk",
+            "email": "info@nuvisaccounting.com",
+            "homepage": "https://nuvisaccounting.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "balping/json-raw-encoder": "^1.0",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^10.0|^11.0|^12.0",
+        "orchestra/testbench": "^8.0|^9.1.4|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NuvisAccounting\\Apexcharts\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NuvisAccounting\\Apexcharts\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NuvisAccounting\\Apexcharts\\Provider"
+            ],
+            "aliases": {
+                "Apexcharts": "NuvisAccounting\\Apexcharts\\Facade"
+            }
+        }
+    }
+}
