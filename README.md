@@ -6,18 +6,14 @@
 
 Online accounting software designed for small businesses and freelancers. NuvisAccounting is built with modern technologies such as Laravel, VueJS, Tailwind, RESTful API etc. Thanks to its modular structure, NuvisAccounting provides an awesome App Store for users and developers.
 
-* [Home](https://nuvisaccounting.com) - The house of NuvisAccounting
-* [Forum](https://nuvisaccounting.com/forum) - Ask for support
-* [Documentation](https://nuvisaccounting.com/hc/docs) - Learn how to use
-* [Developer Portal](https://developer.nuvisaccounting.com) - Generate passive income
-* [App Store](https://nuvisaccounting.com/apps) - Extend your NuvisAccounting
+* [Home](https://nuvistechnologies.com.fj/accounting) - NuvisAccounting
+* [Support & Documentation](https://nuvistechnologies.com.fj/accounting) - Learn how to use
 
 ## Requirements
 
 * PHP 8.1 or higher
 * Database (e.g.: MariaDB, MySQL, PostgreSQL, SQLite)
-* Web Server (eg: Apache, Nginx, IIS)
-* [Other libraries](https://nuvisaccounting.com/hc/docs/on-premise/requirements/)
+* Web Server (e.g.: Apache, Nginx, IIS)
 
 ## Framework
 
@@ -41,18 +37,17 @@ Please, be very clear on your commit messages and Pull Requests, empty Pull Requ
 
 When contributing code to NuvisAccounting, you must follow the PSR coding standards. The golden rule is: Imitate the existing NuvisAccounting code.
 
-Please note that this project is released with a [Contributor Code of Conduct](https://nuvisaccounting.com/conduct). *By participating in this project you agree to abide by its terms*.
-
 ## Changelog
 
 Please see [Releases](../../releases) for more information about what has changed recently.
 
 ## Security
 
-Please review [our security policy](https://github.com/nuvisaccounting/nuvisaccounting/security/policy) on how to report security vulnerabilities.
+Please review [our security policy](SECURITY.md) on how to report security vulnerabilities or contact `accounting@nuvistechnologies.com.fj`.
 
 ## Credits
 
+* Nuvis Technologies
 * Nilesh Chandrra
 
 
