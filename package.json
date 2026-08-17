@@ -1,6 +1,6 @@
 {
     "name": "nuvisaccounting",
-    "version": "3.1.15",
+    "version": "3.2.2",
     "private": true,
     "scripts": {
         "dev": "npm run development",
@@ -100,6 +100,6 @@
         "last 2 versions",
         "not ie <= 10"
     ],
-    "author": "NuvisAccounting Inc <info@nuvisaccounting.com>",
-    "description": "Free Accounting Software"
+    "author": "Nuvis Technologies <accounting@nuvistechnologies.com.fj>",
+    "description": "NuvisAccounting Online Accounting Software"
 }

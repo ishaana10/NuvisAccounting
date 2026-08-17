@@ -91,6 +91,8 @@ _ide_helper.php
 _ide_helper_models.php
 .phpstorm.meta.php
 /storage/debugbar/*
+/storage/logs/*.log
+status.log
 .phpunit.result.cache
 modules/*
 !modules/.gitkeep
