@@ -1,34 +1,21 @@
-# CHANGELOG & MIGRATION ROADMAP
+# CHANGELOG & UPSTREAM 3.2.2 CATCH-UP
 
 ## [3.2.2] - 2026-08-17
 
-### Added / Updated
-- Rebranded assets and public JavaScript paths (`public/nuvisaccounting-js/`).
-- Updated project branding, domain configuration (`https://nuvistechnologies.com.fj/accounting`), and security contact email (`accounting@nuvistechnologies.com.fj`).
-- Configured production defaults in `.env.example` (`APP_DEBUG=false`, `FIREWALL_ENABLED=true`).
-- Cleaned development artifacts (`status.log`) and enforced git tracking exclusions for build artifacts, vendors, and logs.
-- Prepared package.json and release documentation for version 3.2.2 upstream catch-up.
+### Updated from Upstream Akaunting 3.2.2
+- **Import Encoding Sanitation**: Added `sanitizeRowEncoding` in `app/Abstracts/Import.php` to clean invalid UTF-8 bytes up front and prevent queue payload encoding failures.
+- **Performance Fixes**:
+  - Resolved Banking Accounts N+1 query issue.
+  - Optimized report category loading and performance across reports.
+- **Report & Document Enhancements**:
+  - Fixed category type search and category component search issues.
+  - Added transaction created and duplicating event support.
+  - Fixed Profit & Loss date filter issue and PDF print formatting.
+  - Enhanced invoice preview status handling.
 
-## Future Architecture Roadmap & Recommendations
-
-### 1. Vue 2 to Vue 3 Upgrade
-- **Current State**: Vue 2 is utilized in resources/assets/js.
-- **Action Plan**:
-  - Migrate Vue options API components to Vue 3 Composition API.
-  - Upgrade Vue router (`vue-router` v4) and state management/utility dependencies.
-  - Test custom Vue components and Element UI migration to Element Plus.
-
-### 2. Framework & PHP Upgrade
-- **Current State**: Laravel 10 and PHP 8.1 platform constraint.
-- **Action Plan**:
-  - Prepare dependencies for Laravel 11 / PHP 8.2+ compatibility.
-  - Refactor obsolete helpers and update overridden core packages under `overrides/`.
-
-### 3. Dependency Security Audits
-- **Action Plan**:
-  - Periodically review `audit.ignore` list in `composer.json`.
-  - Update secondary packages to patch advisories directly rather than ignoring advisories.
-
-### 4. Custom Packages Distribution
-- **Action Plan**:
-  - Evaluate publishing `nuvisaccounting/*` packages to private Satis/Packagist repositories rather than path overrides in `overrides/nuvisaccounting/`.
+### NuvisAccounting Rebranding & Maintenance
+- Updated application branding, domain links (`https://nuvistechnologies.com.fj/accounting`), and contact email (`accounting@nuvistechnologies.com.fj`).
+- Renamed static asset path to `public/nuvisaccounting-js/` and replaced logo with new Nuvis logo asset.
+- Excluded development log files (`status.log`, `storage/logs/*.log`) in `.gitignore`.
+- Updated `.env.example` with production defaults (`APP_DEBUG=false`, `FIREWALL_ENABLED=true`).
+- Updated `package.json` version to 3.2.2.

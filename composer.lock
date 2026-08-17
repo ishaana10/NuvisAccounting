@@ -7,16 +7,16 @@
     "content-hash": "6b0ce2b192df881be607cae850b9a89e",
     "packages": [
         {
-            "name": "akaunting/laravel-apexcharts",
+            "name": "nuvisaccounting/laravel-apexcharts",
             "version": "3.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-apexcharts.git",
+                "url": "https://github.com/nuvisaccounting/laravel-apexcharts.git",
                 "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-apexcharts/zipball/e44fb0b858ad3e87557d2aea822dac8a86d048f3",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-apexcharts/zipball/e44fb0b858ad3e87557d2aea822dac8a86d048f3",
                 "reference": "e44fb0b858ad3e87557d2aea822dac8a86d048f3",
                 "shasum": ""
             },
@@ -53,7 +53,7 @@
             ],
             "authors": [
                 {
-                    "name": "C\u00fcneyt \u015eent\u00fcrk",
+                    "name": "Cüneyt Şentürk",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -76,16 +76,16 @@
             "time": "2025-04-04T21:02:33+00:00"
         },
         {
-            "name": "akaunting/laravel-debugbar-collector",
+            "name": "nuvisaccounting/laravel-debugbar-collector",
             "version": "2.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-debugbar-collector.git",
+                "url": "https://github.com/nuvisaccounting/laravel-debugbar-collector.git",
                 "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-debugbar-collector/zipball/dc6a879f8dbfe5562679baf505f92ed13ec19afe",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-debugbar-collector/zipball/dc6a879f8dbfe5562679baf505f92ed13ec19afe",
                 "reference": "dc6a879f8dbfe5562679baf505f92ed13ec19afe",
                 "shasum": ""
             },
@@ -116,7 +116,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -141,16 +141,16 @@
             "time": "2023-06-02T07:22:01+00:00"
         },
         {
-            "name": "akaunting/laravel-firewall",
+            "name": "nuvisaccounting/laravel-firewall",
             "version": "2.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-firewall.git",
+                "url": "https://github.com/nuvisaccounting/laravel-firewall.git",
                 "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-firewall/zipball/98e19074c4d32e09d61c90057d5adc54d7f10ffa",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-firewall/zipball/98e19074c4d32e09d61c90057d5adc54d7f10ffa",
                 "reference": "98e19074c4d32e09d61c90057d5adc54d7f10ffa",
                 "shasum": ""
             },
@@ -183,7 +183,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -208,16 +208,16 @@
             "time": "2025-04-09T21:44:10+00:00"
         },
         {
-            "name": "akaunting/laravel-language",
+            "name": "nuvisaccounting/laravel-language",
             "version": "1.0.22",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-language.git",
+                "url": "https://github.com/nuvisaccounting/laravel-language.git",
                 "reference": "83285fb4ad450b406f2df8570090828e4326ee1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-language/zipball/83285fb4ad450b406f2df8570090828e4326ee1a",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-language/zipball/83285fb4ad450b406f2df8570090828e4326ee1a",
                 "reference": "83285fb4ad450b406f2df8570090828e4326ee1a",
                 "shasum": ""
             },
@@ -251,7 +251,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -270,16 +270,16 @@
             "time": "2022-08-05T07:33:12+00:00"
         },
         {
-            "name": "akaunting/laravel-menu",
+            "name": "nuvisaccounting/laravel-menu",
             "version": "3.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-menu.git",
+                "url": "https://github.com/nuvisaccounting/laravel-menu.git",
                 "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-menu/zipball/b69bb5c9d308eabb777fbb59269f7c8102ecda55",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-menu/zipball/b69bb5c9d308eabb777fbb59269f7c8102ecda55",
                 "reference": "b69bb5c9d308eabb777fbb59269f7c8102ecda55",
                 "shasum": ""
             },
@@ -321,7 +321,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -342,16 +342,16 @@
             "time": "2023-10-25T12:43:24+00:00"
         },
         {
-            "name": "akaunting/laravel-module",
+            "name": "nuvisaccounting/laravel-module",
             "version": "4.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-module.git",
+                "url": "https://github.com/nuvisaccounting/laravel-module.git",
                 "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-module/zipball/d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-module/zipball/d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
                 "reference": "d8ba8aad32326493d48785a6ffc75c34c12ad1b0",
                 "shasum": ""
             },
@@ -388,7 +388,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -408,16 +408,16 @@
             "time": "2024-12-05T04:55:26+00:00"
         },
         {
-            "name": "akaunting/laravel-money",
+            "name": "nuvisaccounting/laravel-money",
             "version": "5.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-money.git",
+                "url": "https://github.com/nuvisaccounting/laravel-money.git",
                 "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-money/zipball/d99a9e8e576cac40668d0a5afaf7ea153590aff9",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-money/zipball/d99a9e8e576cac40668d0a5afaf7ea153590aff9",
                 "reference": "d99a9e8e576cac40668d0a5afaf7ea153590aff9",
                 "shasum": ""
             },
@@ -456,7 +456,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -477,16 +477,16 @@
             "time": "2024-09-25T10:06:11+00:00"
         },
         {
-            "name": "akaunting/laravel-mutable-observer",
+            "name": "nuvisaccounting/laravel-mutable-observer",
             "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-mutable-observer.git",
+                "url": "https://github.com/nuvisaccounting/laravel-mutable-observer.git",
                 "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-mutable-observer/zipball/f7367ae0fcf7e9ac640bee5ec016471564125b21",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-mutable-observer/zipball/f7367ae0fcf7e9ac640bee5ec016471564125b21",
                 "reference": "f7367ae0fcf7e9ac640bee5ec016471564125b21",
                 "shasum": ""
             },
@@ -517,7 +517,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -538,16 +538,16 @@
             "time": "2023-03-16T14:49:06+00:00"
         },
         {
-            "name": "akaunting/laravel-setting",
+            "name": "nuvisaccounting/laravel-setting",
             "version": "1.2.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-setting.git",
+                "url": "https://github.com/nuvisaccounting/laravel-setting.git",
                 "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-setting/zipball/97e42cd18b6595169c3a5b8082d20f9585c9c512",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-setting/zipball/97e42cd18b6595169c3a5b8082d20f9585c9c512",
                 "reference": "97e42cd18b6595169c3a5b8082d20f9585c9c512",
                 "shasum": ""
             },
@@ -585,7 +585,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -605,16 +605,16 @@
             "time": "2023-11-02T08:32:45+00:00"
         },
         {
-            "name": "akaunting/laravel-sortable",
+            "name": "nuvisaccounting/laravel-sortable",
             "version": "2.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-sortable.git",
+                "url": "https://github.com/nuvisaccounting/laravel-sortable.git",
                 "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-sortable/zipball/5d852b359ffd805e1e216c8989b95d526edfb8a2",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-sortable/zipball/5d852b359ffd805e1e216c8989b95d526edfb8a2",
                 "reference": "5d852b359ffd805e1e216c8989b95d526edfb8a2",
                 "shasum": ""
             },
@@ -645,7 +645,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -669,16 +669,16 @@
             "time": "2024-07-12T11:55:40+00:00"
         },
         {
-            "name": "akaunting/laravel-version",
+            "name": "nuvisaccounting/laravel-version",
             "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/laravel-version.git",
+                "url": "https://github.com/nuvisaccounting/laravel-version.git",
                 "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/laravel-version/zipball/5d632c8ce54131bbe15f22ea135934efbf1fad85",
+                "url": "https://api.github.com/repos/nuvisaccounting/laravel-version/zipball/5d632c8ce54131bbe15f22ea135934efbf1fad85",
                 "reference": "5d632c8ce54131bbe15f22ea135934efbf1fad85",
                 "shasum": ""
             },
@@ -711,7 +711,7 @@
             ],
             "authors": [
                 {
-                    "name": "Denis Duli\u00e7i",
+                    "name": "Denis Duliçi",
                     "email": "info@nuvisaccounting.com",
                     "homepage": "https://nuvisaccounting.com",
                     "role": "Developer"
@@ -729,16 +729,16 @@
             "time": "2021-03-05T11:00:11+00:00"
         },
         {
-            "name": "akaunting/module-offline-payments",
+            "name": "nuvisaccounting/module-offline-payments",
             "version": "3.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/module-offline-payments.git",
+                "url": "https://github.com/nuvisaccounting/module-offline-payments.git",
                 "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/module-offline-payments/zipball/9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
+                "url": "https://api.github.com/repos/nuvisaccounting/module-offline-payments/zipball/9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
                 "reference": "9e444c2e3f5afb779828fdb4c9ab8dafb84ba901",
                 "shasum": ""
             },
@@ -763,16 +763,16 @@
             "time": "2024-04-30T13:19:29+00:00"
         },
         {
-            "name": "akaunting/module-paypal-standard",
+            "name": "nuvisaccounting/module-paypal-standard",
             "version": "3.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/akaunting/module-paypal-standard.git",
+                "url": "https://github.com/nuvisaccounting/module-paypal-standard.git",
                 "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/akaunting/module-paypal-standard/zipball/798bb068fcb6accd313d8aeb5562f2a801e77c92",
+                "url": "https://api.github.com/repos/nuvisaccounting/module-paypal-standard/zipball/798bb068fcb6accd313d8aeb5562f2a801e77c92",
                 "reference": "798bb068fcb6accd313d8aeb5562f2a801e77c92",
                 "shasum": ""
             },
@@ -979,7 +979,7 @@
             ],
             "authors": [
                 {
-                    "name": "Bal\u00e1zs Dura-Kov\u00e1cs"
+                    "name": "Balázs Dura-Kovács"
                 }
             ],
             "description": "Encode arrays to json with raw JS objects (eg. callbacks) in them",
@@ -1704,7 +1704,7 @@
             ],
             "authors": [
                 {
-                    "name": "Christian L\u00fcck",
+                    "name": "Christian Lück",
                     "email": "christian@clue.engineering"
                 }
             ],
@@ -3287,7 +3287,7 @@
                     "homepage": "https://github.com/Nyholm"
                 },
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://github.com/sagikazarmark"
                 },
@@ -3486,7 +3486,7 @@
                     "homepage": "https://github.com/Nyholm"
                 },
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://github.com/sagikazarmark"
                 },
@@ -3496,7 +3496,7 @@
                     "homepage": "https://github.com/Tobion"
                 },
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://sagikazarmark.hu"
                 }
@@ -6384,7 +6384,7 @@
                     "email": "pabs@pablotron.org"
                 },
                 {
-                    "name": "Jonatan M\u00e4nnchen",
+                    "name": "Jonatan Männchen",
                     "email": "jonatan@maennchen.ch"
                 },
                 {
@@ -6392,7 +6392,7 @@
                     "email": "donatj@gmail.com"
                 },
                 {
-                    "name": "Andr\u00e1s Koles\u00e1r",
+                    "name": "András Kolesár",
                     "email": "kolesar@kolesar.hu"
                 }
             ],
@@ -6774,7 +6774,7 @@
                     "homepage": "http://verraes.net"
                 },
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com"
                 },
                 {
@@ -7126,7 +7126,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "\ud83d\udcd0 Nette Schema: validating data structures against a given Schema.",
+            "description": "📐 Nette Schema: validating data structures against a given Schema.",
             "homepage": "https://nette.org",
             "keywords": [
                 "config",
@@ -7203,7 +7203,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "\ud83d\udee0  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -7639,7 +7639,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien M\u00e9nager",
+                    "name": "Fabien Ménager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -7685,7 +7685,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien M\u00e9nager",
+                    "name": "Fabien Ménager",
                     "email": "fabien.menager@gmail.com"
                 }
             ],
@@ -7828,7 +7828,7 @@
             ],
             "authors": [
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com"
                 }
             ],
@@ -7949,7 +7949,7 @@
                     "email": "geloen.eric@gmail.com"
                 },
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com",
                     "homepage": "https://sagikazarmark.hu"
                 }
@@ -8018,7 +8018,7 @@
             ],
             "authors": [
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com"
                 }
             ],
@@ -8072,7 +8072,7 @@
                     "email": "joel.wurtz@gmail.com"
                 },
                 {
-                    "name": "M\u00e1rk S\u00e1gi-Kaz\u00e1r",
+                    "name": "Márk Sági-Kazár",
                     "email": "mark.sagikazar@gmail.com"
                 }
             ],
@@ -10107,7 +10107,7 @@
                     "email": "fabien@symfony.com"
                 },
                 {
-                    "name": "Jean-Fran\u00e7ois Simon",
+                    "name": "Jean-François Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
@@ -11998,7 +11998,7 @@
             ],
             "authors": [
                 {
-                    "name": "Gr\u00e9goire Pineau",
+                    "name": "Grégoire Pineau",
                     "email": "lyrixx@lyrixx.info"
                 },
                 {
@@ -12817,7 +12817,7 @@
             ],
             "authors": [
                 {
-                    "name": "Gr\u00e9goire Pineau",
+                    "name": "Grégoire Pineau",
                     "email": "lyrixx@lyrixx.info"
                 },
                 {
@@ -13370,7 +13370,7 @@
             ],
             "authors": [
                 {
-                    "name": "Fran\u00e7ois Zaninotto"
+                    "name": "François Zaninotto"
                 }
             ],
             "description": "Faker is a PHP library that generates fake data for you.",
@@ -13425,7 +13425,7 @@
             ],
             "authors": [
                 {
-                    "name": "Th\u00e9o FIDRY",
+                    "name": "Théo FIDRY",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
@@ -13610,7 +13610,7 @@
             ],
             "authors": [
                 {
-                    "name": "P\u00e1draic Brady",
+                    "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "https://github.com/padraic",
                     "role": "Author"
