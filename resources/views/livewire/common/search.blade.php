@@ -33,14 +33,13 @@
             @endif
         </div>
     </div>
+    @push('scripts_end')
+    <script type="text/javascript">
+        window.addEventListener('click', function() {
+            if (Livewire.components.getComponentsByName('common.search')[0].data.results.length > 0) {
+                Livewire.emit('resetKeyword');
+            }
+        });
+    </script>
+    @endpush
 </form>
-
-@push('scripts_end')
-<script type="text/javascript">
-    window.addEventListener('click', function() {
-        if (Livewire.components.getComponentsByName('common.search')[0].data.results.length > 0) {
-            Livewire.emit('resetKeyword');
-        }
-    });
-</script>
-@endpush

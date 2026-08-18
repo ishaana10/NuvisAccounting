@@ -1,6 +1,5 @@
-@php $reportClassForId = Str::slug(Str::snake(class_basename($report->class))); @endphp
-
 <button class="w-8 h-8 flex items-center justify-center px-2 py-2 rounded-xl text-purple text-sm font-medium leading-6" data-tooltip-target="{{ $report->id }}-pin" data-tooltip-placement="bottom">
+    @php $reportClassForId = Str::slug(Str::snake(class_basename($report->class))); @endphp
     <span
         id="{{ $pinned ? 'index-line-actions-unpin-report-' . $reportClassForId . '-' . $report->id : 'index-line-actions-pin-report-' . $reportClassForId . '-' . $report->id }}"
         @class([
