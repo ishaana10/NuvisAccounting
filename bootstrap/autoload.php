@@ -281,7 +281,7 @@ if (!function_exists('run_diagnostics_checklist')) {
         }
 
         // 2. Critical Writable Paths
-        $root = __DIR__ . '/..';
+        $root = realpath(__DIR__ . '/..') ?: (__DIR__ . '/..');
         $writable_paths = [
             'storage' => $root . '/storage',
             'storage/app' => $root . '/storage/app',
@@ -307,12 +307,37 @@ if (!function_exists('run_diagnostics_checklist')) {
             ];
         }
 
-        // 3. Autoload Existence
+        // 3. Autoload Existence & Integrity
         $autoload_file = $root . '/vendor/autoload.php';
         $checklist['vendor_existence']['vendor/autoload.php'] = [
             'passed' => file_exists($autoload_file),
             'error' => file_exists($autoload_file) ? null : "The 'vendor/autoload.php' file is missing. Please run 'composer install'."
         ];
+
+        $autoload_files_path = $root . '/vendor/composer/autoload_files.php';
+        if (file_exists($autoload_files_path)) {
+            $autoload_files = @include $autoload_files_path;
+            $missing_files = [];
+            if (is_array($autoload_files)) {
+                foreach ($autoload_files as $hash => $file) {
+                    if (!file_exists($file)) {
+                        $relative_path = str_replace($root . '/', '', $file);
+                        $missing_files[] = $relative_path;
+                    }
+                }
+            }
+            if (!empty($missing_files)) {
+                $checklist['vendor_existence']['composer_autoload_files'] = [
+                    'passed' => false,
+                    'error' => 'Autoloader references missing files: ' . implode(', ', array_slice($missing_files, 0, 2)) . (count($missing_files) > 2 ? ' (+' . (count($missing_files) - 2) . ' more)' : '') . '. Run "composer dump-autoload --no-dev" to re-generate autoloader.'
+                ];
+            } else {
+                $checklist['vendor_existence']['composer_autoload_files'] = [
+                    'passed' => true,
+                    'error' => null
+                ];
+            }
+        }
 
         // 4. Core Framework Classes (only checked if autoload exists)
         $core_classes = [
