@@ -138,7 +138,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'JustAKeyForNuvisAccountingInstallation'),
+    'key' => env('APP_KEY') ?: 'base64:TnV2aXNBY2NvdW50aW5nRGVmYXVsdEFwcEtleTMyQiE=',
 
     'cipher' => env('APP_CIPHER', 'AES-256-CBC'),
 

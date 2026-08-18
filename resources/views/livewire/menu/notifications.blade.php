@@ -60,24 +60,23 @@
             </li>
         </ul>
     @endif
+    @push('scripts_end')
+        <script type="text/javascript">
+            window.addEventListener('mark-read', event => {
+                if (event.detail.type == 'notifications') {
+                    $.notify(event.detail.message, {
+                        type: 'success',
+                    });
+                }
+            });
+
+            window.addEventListener('mark-read-all', event => {
+                if (event.detail.type == 'notifications') {
+                    $.notify(event.detail.message, {
+                        type: 'success',
+                    });
+                }
+            });
+        </script>
+    @endpush
 </div>
-
-@push('scripts_end')
-    <script type="text/javascript">
-        window.addEventListener('mark-read', event => {
-            if (event.detail.type == 'notifications') {
-                $.notify(event.detail.message, {
-                    type: 'success',
-                });
-            }
-        });
-
-        window.addEventListener('mark-read-all', event => {
-            if (event.detail.type == 'notifications') {
-                $.notify(event.detail.message, {
-                    type: 'success',
-                });
-            }
-        });
-    </script>
-@endpush

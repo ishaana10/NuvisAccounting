@@ -264,6 +264,7 @@ if (!function_exists('run_diagnostics_checklist')) {
             'php_extensions' => [],
             'writable_paths' => [],
             'vendor_existence' => [],
+            'application_config' => [],
             'framework_classes' => [],
             'override_modules' => [],
         ];
@@ -339,7 +340,35 @@ if (!function_exists('run_diagnostics_checklist')) {
             }
         }
 
-        // 4. Core Framework Classes (only checked if autoload exists)
+        // 4. Application Key Check
+        $app_key = getenv('APP_KEY');
+        if (file_exists($root . '/.env')) {
+            $env_lines = file($root . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+            foreach ($env_lines as $line) {
+                if (strpos(trim($line), 'APP_KEY=') === 0) {
+                    $app_key = trim(substr(trim($line), 8));
+                    break;
+                }
+            }
+        }
+        $key_valid = true;
+        $key_error = null;
+        if (!empty($app_key)) {
+            $key_str = $app_key;
+            if (str_starts_with($key_str, 'base64:')) {
+                $key_str = base64_decode(substr($key_str, 7));
+            }
+            if (strlen($key_str) !== 32 && strlen($key_str) !== 16) {
+                $key_valid = false;
+                $key_error = "APP_KEY length is invalid (" . strlen($key_str) . " bytes). Requires 32 bytes for AES-256-CBC.";
+            }
+        }
+        $checklist['application_config']['APP_KEY'] = [
+            'passed' => $key_valid,
+            'error' => $key_error
+        ];
+
+        // 5. Core Framework Classes (only checked if autoload exists)
         $core_classes = [
             'Illuminate\Foundation\Application' => 'laravel/framework',
             'Livewire\Livewire' => 'livewire/livewire',
@@ -372,7 +401,7 @@ if (!function_exists('run_diagnostics_checklist')) {
             }
         }
 
-        // 5. Override Modules
+        // 6. Override Modules
         $override_namespaces = [
             'NuvisAccounting\Apexcharts\Chart' => 'overrides/nuvisaccounting/laravel-apexcharts',
             'NuvisAccounting\Module\Commands\DisableCommand' => 'overrides/nuvisaccounting/laravel-module',

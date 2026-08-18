@@ -22,10 +22,9 @@
             </li>
         </ul>
     @endif
+    @push('scripts_start')
+    <script type="text/javascript">
+        var is_settings_menu = {{ $active_menu }};
+    </script>
+    @endpush
 </div>
-
-@push('scripts_start')
-<script type="text/javascript">
-    var is_settings_menu = {{ $active_menu }};
-</script>
-@endpush
