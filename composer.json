@@ -89,7 +89,12 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "beyondcode/laravel-dump-server",
+                "nunomaduro/collision",
+                "spatie/laravel-ignition",
+                "wnx/laravel-stats"
+            ]
         },
         "installer-paths": {
             "modules/OfflinePayments": [
@@ -174,7 +179,7 @@
         ],
         "prod": [
             "composer install --prefer-dist --no-interaction --no-scripts --no-progress --no-ansi --no-dev",
-            "composer dump-autoload"
+            "composer dump-autoload --no-dev --optimize"
         ],
         "test": [
             "composer install --prefer-dist --no-interaction --no-scripts --no-progress --no-ansi",
