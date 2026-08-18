@@ -37,19 +37,18 @@
             </div>
         </div>
     </div>
+    @push('scripts_start')
+    <script>
+        function closeConfirmFirefox() {
+            const d = new Date();
+            d.setTime(d.getTime() + (86400 * 90 * 90 * 90 * 30));
+
+            let expires = "expires="+ d.toUTCString();
+
+            document.cookie = "firefox-icon-notification-confirm=true;" + expires + ";path=/";
+
+            document.querySelector('.firefox-confirm-modal').remove();
+        }
+    </script>
+    @endpush
 </div>
-
-@push('scripts_start')
-<script>
-    function closeConfirmFirefox() {
-        const d = new Date();
-        d.setTime(d.getTime() + (86400 * 90 * 90 * 90 * 30));
-
-        let expires = "expires="+ d.toUTCString();
-
-        document.cookie = "firefox-icon-notification-confirm=true;" + expires + ";path=/";
-
-        document.querySelector('.firefox-confirm-modal').remove();
-    }
-</script>
-@endpush
