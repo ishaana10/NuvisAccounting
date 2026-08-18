@@ -73,7 +73,7 @@ class TestCompany extends Seeder
 
         $company->makeCurrent(true);
 
-        setting()->set('email.protocol', 'log');
+        setting()->set('email.protocol', 'array');
         config(['mail.default' => setting('email.protocol')]);
 
         $this->command->info('Test company created.');
