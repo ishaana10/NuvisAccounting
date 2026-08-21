@@ -1,6 +1,6 @@
 @stack('scripts_start')
 
-<!-- <script type="text/javascript" src="{{ asset('public/nuvisaccounting-js/hotkeys.js') }}" defer></script> -->
+<script type="text/javascript" src="{{ asset('public/nuvisaccounting-js/hotkeys.js') }}" defer></script>
 
 @stack('body_css')
 
