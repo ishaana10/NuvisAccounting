@@ -248,8 +248,10 @@ class Installer
 
     public static function createUser($email, $password, $locale)
     {
+        $name = Str::before($email, '@');
+
         dispatch_sync(new CreateUser([
-            'name' => '',
+            'name' => $name,
             'email' => $email,
             'password' => $password,
             'locale' => $locale,
