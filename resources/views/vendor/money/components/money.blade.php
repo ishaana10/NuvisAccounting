@@ -7,7 +7,7 @@
 
     // Defensive: cast non-numeric values (e.g. boolean false) to 0
     // so the money() helper never receives an unsupported type.
-    if (!is_numeric($normalized_amount) && !($normalized_amount instanceof \Akaunting\Money\Money)) {
+    if (!is_numeric($normalized_amount) && !($normalized_amount instanceof \Akaunting\Money\Money) && !($normalized_amount instanceof \NuvisAccounting\Money\Money)) {
         $normalized_amount = 0;
     }
 @endphp
