@@ -28,22 +28,34 @@ class Settings extends Controller
      */
     public function store(Request $request)
     {
-        DB::transaction(function () use ($request) {
-            $locale = session('locale') ?? config('app.locale');
+        try {
+            DB::transaction(function () use ($request) {
+                $locale = session('locale') ?? config('app.locale');
 
-            // Create company
-            Installer::createCompany($request->get('company_name'), $request->get('company_email'), $locale);
+                // Create company
+                Installer::createCompany($request->get('company_name'), $request->get('company_email'), $locale);
 
-            // Create user
-            Installer::createUser($request->get('user_email'), $request->get('user_password'), $locale);
-        });
+                // Create user
+                Installer::createUser($request->get('user_email'), $request->get('user_password'), $locale);
+            });
 
-        // Make the final touches
-        Installer::finalTouches();
+            // Make the final touches
+            Installer::finalTouches();
 
-        // Redirect to dashboard
-        $response['redirect'] = route('login');
+            // Redirect to dashboard
+            $response['redirect'] = route('login');
 
-        return response()->json($response);
+            return response()->json($response);
+        } catch (\Throwable $e) {
+            report($e);
+
+            return response()->json([
+                'error' => true,
+                'message' => $e->getMessage(),
+                'exception' => get_class($e),
+                'file' => $e->getFile() . ':' . $e->getLine(),
+                'trace' => array_slice(explode("\n", $e->getTraceAsString()), 0, 10),
+            ], 500);
+        }
     }
 }
