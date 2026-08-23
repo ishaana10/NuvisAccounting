@@ -33,10 +33,10 @@ class Settings extends Controller
                 $locale = session('locale') ?? config('app.locale');
 
                 // Create company
-                Installer::createCompany($request->get('company_name'), $request->get('company_email'), $locale);
+                $company_id = Installer::createCompany($request->get('company_name'), $request->get('company_email'), $locale);
 
                 // Create user
-                Installer::createUser($request->get('user_email'), $request->get('user_password'), $locale);
+                Installer::createUser($request->get('user_email'), $request->get('user_password'), $locale, $company_id);
             });
 
             // Make the final touches

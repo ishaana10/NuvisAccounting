@@ -236,17 +236,21 @@ class Installer
 
     public static function createCompany($name, $email, $locale)
     {
-        dispatch_sync(new CreateCompany([
+        $job = new CreateCompany([
             'name' => $name,
             'domain' => '',
             'email' => $email,
             'currency' => 'USD',
             'locale' => $locale,
             'enabled' => '1',
-        ]));
+        ]);
+
+        dispatch_sync($job);
+
+        return $job->model?->id ?? 1;
     }
 
-    public static function createUser($email, $password, $locale)
+    public static function createUser($email, $password, $locale, $company_id = 1)
     {
         $name = Str::before($email, '@');
 
@@ -255,7 +259,7 @@ class Installer
             'email' => $email,
             'password' => $password,
             'locale' => $locale,
-            'companies' => ['1'],
+            'companies' => [(string) $company_id],
             'roles' => ['1'],
             'enabled' => '1',
         ]));
