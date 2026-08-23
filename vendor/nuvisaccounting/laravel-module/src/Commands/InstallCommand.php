@@ -67,13 +67,15 @@ class InstallCommand extends Command
         $dependencies = $modules->get('require', []);
 
         foreach ($dependencies as $module) {
-            $module = collect($module);
+            $module = is_array($module) ? collect($module) : $module;
 
-            $this->install(
-                $module->get('alias'),
-                $module->get('version'),
-                $module->get('type')
-            );
+            if (is_object($module) && method_exists($module, 'get')) {
+                $this->install(
+                    $module->get('alias'),
+                    $module->get('version'),
+                    $module->get('type')
+                );
+            }
         }
     }
 
