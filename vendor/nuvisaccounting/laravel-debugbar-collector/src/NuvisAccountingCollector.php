@@ -59,8 +59,10 @@ class NuvisAccountingCollector extends DataCollector implements DataCollectorInt
 
             $exists = $this->moduleExists($module->alias);
 
+            $mod = $this->moduleExists($module->alias) ? module($module->alias) : null;
+
             $modules[$module->alias] = [
-                'Installed Version' => $exists ? module($module->alias)->get('version') : 'N/A',
+                'Installed Version' => $mod ? $mod->get('version') : 'N/A',
                 'Latest Version' => isset($versions[$module->alias]) ? $versions[$module->alias] : 'N/A',
                 'Enabled' => $module->enabled,
                 'Exists' => $exists,
