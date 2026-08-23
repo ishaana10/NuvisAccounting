@@ -31,7 +31,9 @@ if (!function_exists('module_attribute')) {
      */
     function module_attribute($alias, $attribute)
     {
-        return app('module')->get($alias)->get($attribute);
+        $mod = app('module')->get($alias);
+
+        return $mod ? $mod->get($attribute) : null;
     }
 }
 
@@ -45,7 +47,9 @@ if (!function_exists('module_version')) {
      */
     function module_version($alias)
     {
-        return app('module')->get($alias)->get('version');
+        $mod = app('module')->get($alias);
+
+        return $mod ? $mod->get('version') : '1.0.0';
     }
 }
 
@@ -59,7 +63,13 @@ if (!function_exists('module_path')) {
      */
     function module_path($alias, $path = '')
     {
-        return app('module')->get($alias)->getPath() . ($path ? '/' . $path : $path);
+        $mod = app('module')->get($alias);
+
+        if (! $mod) {
+            return base_path('modules/' . $alias . ($path ? '/' . $path : $path));
+        }
+
+        return $mod->getPath() . ($path ? '/' . $path : $path);
     }
 }
 
