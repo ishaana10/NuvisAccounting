@@ -29,7 +29,13 @@ class InstallExtraModules
             return;
         }
 
-        $extra_modules = module($event->alias)->get('extra-modules');
+        $mod = module($event->alias);
+
+        if (!$mod) {
+            return;
+        }
+
+        $extra_modules = $mod->get('extra-modules');
 
         if (empty($extra_modules)) {
             return;
