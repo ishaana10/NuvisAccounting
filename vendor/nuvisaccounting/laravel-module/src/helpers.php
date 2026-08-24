@@ -10,13 +10,17 @@ if (!function_exists('module')) {
      */
     function module($alias = null)
     {
+        if (! app()->bound('module')) {
+            return null;
+        }
+
         $module = app('module');
 
         if (is_null($alias)) {
             return $module;
         }
 
-        return $module->get($alias);
+        return $module ? $module->get($alias) : null;
     }
 }
 
@@ -31,7 +35,7 @@ if (!function_exists('module_attribute')) {
      */
     function module_attribute($alias, $attribute)
     {
-        $mod = app('module')->get($alias);
+        $mod = module($alias);
 
         return $mod ? $mod->get($attribute) : null;
     }
@@ -47,7 +51,7 @@ if (!function_exists('module_version')) {
      */
     function module_version($alias)
     {
-        $mod = app('module')->get($alias);
+        $mod = module($alias);
 
         return $mod ? $mod->get('version') : '1.0.0';
     }
@@ -63,7 +67,7 @@ if (!function_exists('module_path')) {
      */
     function module_path($alias, $path = '')
     {
-        $mod = app('module')->get($alias);
+        $mod = module($alias);
 
         if (! $mod) {
             return base_path('modules/' . $alias . ($path ? '/' . $path : $path));
