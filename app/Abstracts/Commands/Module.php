@@ -61,8 +61,6 @@ abstract class Module extends Command
             return;
         }
 
-        $mod = module($this->alias);
-
         ModelHistory::create([
             'company_id' => $this->company_id,
             'module_id' => $this->model->id,
