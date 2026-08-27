@@ -89,7 +89,12 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [
+                "beyondcode/laravel-dump-server",
+                "nunomaduro/collision",
+                "spatie/laravel-ignition",
+                "wnx/laravel-stats"
+            ]
         },
         "installer-paths": {
             "modules/OfflinePayments": [
